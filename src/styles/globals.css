@@ -1,0 +1,22 @@
+@import "./variables.css";
+@import "./tailwind.css";
+@import "./animations.css";
+@import "./design-system.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html { background: var(--color-background); }
+
+body {
+  min-width: 20rem;
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-body);
+}
+
+button, input, textarea { font: inherit; }

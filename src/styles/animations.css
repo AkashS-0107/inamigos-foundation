@@ -1,0 +1,33 @@
+/* Animation keyframes and utility classes belong here. Timing tokens live in variables.css. */
+
+@property --ds-border-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes ds-shimmer {
+  to { background-position: -220% 0; }
+}
+
+@keyframes ds-border-spin {
+  to { --ds-border-angle: 360deg; }
+}
+
+@keyframes ds-float {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -12px, 0); }
+}
+
+.ds-shimmer { animation: ds-shimmer var(--duration-slower) var(--ease-linear) infinite; }
+.ds-animated-border { animation: ds-border-spin var(--duration-slower) var(--ease-linear) infinite; }
+.ds-animated-border__inner { width: 100%; height: 100%; }
+.ds-particle, .ds-floating-shape { position: absolute; display: block; animation: ds-float var(--duration-slowest) var(--ease-in-out) infinite; }
+.ds-particle { border-radius: var(--radius-full); }
+.ds-floating-shape--circle { border-radius: var(--radius-full); }
+.ds-floating-shape--square { border-radius: var(--radius-sm); }
+.ds-floating-shape--diamond { transform: rotate(45deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-shimmer, .ds-animated-border, .ds-particle, .ds-floating-shape { animation: none; }
+}

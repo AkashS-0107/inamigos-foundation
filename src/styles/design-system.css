@@ -1,0 +1,25 @@
+/* Component primitives deliberately use semantic design tokens only. */
+.ds-focus:focus-visible { outline: var(--space-1) solid var(--color-accent); outline-offset: var(--space-1); }
+.ds-button { display:inline-flex; align-items:center; justify-content:center; gap:var(--space-2); border:1px solid transparent; border-radius:var(--radius-md); padding:var(--space-3) var(--space-4); font-weight:700; line-height:1.25; cursor:pointer; transition:transform var(--duration-fast) var(--ease-in-out), background-color var(--duration-fast) var(--ease-in-out), color var(--duration-fast) var(--ease-in-out), border-color var(--duration-fast) var(--ease-in-out); }
+.ds-button:hover:not(:disabled) { transform:translateY(calc(var(--space-1) * -0.5)); }
+.ds-button:disabled { cursor:not-allowed; opacity:.6; }
+.ds-button--primary { background:var(--color-primary); color:var(--color-surface); }
+.ds-button--secondary { background:var(--color-secondary); color:var(--color-surface); }
+.ds-button--outline { background:transparent; border-color:var(--color-border); color:var(--color-text-primary); }
+.ds-button--ghost { background:transparent; color:var(--color-primary); }
+.ds-button--sm { padding:var(--space-2) var(--space-3); font-size:var(--font-size-body-small); }
+.ds-button--lg { padding:var(--space-4) var(--space-6); font-size:var(--font-size-body-large); }
+.ds-icon-button { aspect-ratio:1; padding:var(--space-3); }
+.ds-card { background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); box-shadow:var(--shadow-sm); }
+.ds-card--padding-none { padding:0; }.ds-card--padding-sm { padding:var(--space-4); }.ds-card--padding-md { padding:var(--space-6); }.ds-card--padding-lg { padding:var(--space-8); }
+.ds-glass-card { background:color-mix(in srgb, var(--color-surface) 76%, transparent); backdrop-filter:blur(var(--space-3)); }
+.ds-badge, .ds-chip { display:inline-flex; align-items:center; gap:var(--space-1); border-radius:var(--radius-full); font-size:var(--font-size-body-small); font-weight:700; line-height:1; }
+.ds-badge { padding:var(--space-2) var(--space-3); background:var(--color-primary); color:var(--color-surface); }.ds-badge--outline { background:transparent; color:var(--color-primary); border:1px solid var(--color-primary); }
+.ds-chip { padding:var(--space-2) var(--space-3); background:var(--color-background); color:var(--color-text-secondary); border:1px solid var(--color-border); }
+.ds-divider { width:100%; border:0; border-top:1px solid var(--color-border); margin:0; }
+.ds-container { width:min(100%, var(--container-max-width)); margin-inline:auto; padding-inline:var(--container-gutter); }
+.ds-section { padding-block:var(--space-16); }.ds-heading { margin:0; color:var(--color-text-primary); font-family:var(--font-family-display); line-height:1.12; }.ds-paragraph { margin:0; color:var(--color-text-secondary); line-height:1.65; }
+.ds-input { display:block; width:100%; padding:var(--space-3) var(--space-4); color:var(--color-text-primary); background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-md); }.ds-input::placeholder { color:var(--color-text-secondary); opacity:.8; }.ds-input:focus { border-color:var(--color-primary); outline:none; box-shadow:0 0 0 var(--space-1) color-mix(in srgb, var(--color-primary) 20%, transparent); }
+.ds-section-header { display:flex; flex-direction:column; gap:var(--space-4); }.ds-stat-card { display:flex; flex-direction:column; gap:var(--space-2); }.ds-social-icon { display:inline-flex; align-items:center; justify-content:center; color:var(--color-text-secondary); }.ds-social-icon:hover { color:var(--color-primary); }
+.ds-effect { pointer-events:none; position:absolute; inset:auto; }.ds-grid-pattern { inset:0; background-image:linear-gradient(var(--color-border) 1px,transparent 1px),linear-gradient(90deg,var(--color-border) 1px,transparent 1px); }.ds-noise { inset:0; opacity:.06; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.7'/%3E%3C/svg%3E"); }
+@media (min-width:48rem) { .ds-section { padding-block:var(--space-24); } }
