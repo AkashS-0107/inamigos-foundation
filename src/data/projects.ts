@@ -1,1 +1,1 @@
-
+export * from "./content/projects";
