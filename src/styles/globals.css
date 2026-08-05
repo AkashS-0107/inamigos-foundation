@@ -4,6 +4,7 @@
 @import "./design-system.css";
 @import "./shell.css";
 @import "./hero.css";
+@import "./about.css";
 
 *,
 *::before,
@@ -11,7 +12,11 @@
   box-sizing: border-box;
 }
 
-html { background: var(--color-background); scroll-behavior:smooth; scroll-padding-top:var(--site-header-height); }
+html {
+  background: var(--color-background);
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--site-header-height);
+}
 
 body {
   min-width: 20rem;
@@ -21,6 +26,12 @@ body {
   font-family: var(--font-family-body);
 }
 
-#root { min-height:100dvh; }
+#root {
+  min-height: 100dvh;
+}
 
-button, input, textarea { font: inherit; }
+button,
+input,
+textarea {
+  font: inherit;
+}

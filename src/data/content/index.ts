@@ -1,1 +1,2 @@
-/** Editorial content modules will be exported from this boundary. */
+/** Editorial content modules exported from this boundary. */
+export * from "./about";

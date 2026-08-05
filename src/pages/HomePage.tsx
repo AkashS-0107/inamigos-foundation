@@ -1,6 +1,12 @@
-import { Hero } from "@/components/sections";
+import { AboutSection, Hero } from "@/components/sections";
 
-/** Home route composition. Additional sections are deliberately introduced in later phases. */
+/** Home route composition containing Hero and Phase 7 About & Mission Section. */
 export function HomePage() {
-  return <Hero />;
+  return (
+    <>
+      <Hero />
+      <AboutSection />
+    </>
+  );
 }
+
