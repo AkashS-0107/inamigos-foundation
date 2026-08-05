@@ -33,4 +33,16 @@ export { GallerySkeleton } from "./gallery/GallerySkeleton";
 export { GalleryGrid as PremiumGalleryGrid } from "./gallery/GalleryGrid";
 export { GalleryLightbox as PremiumGalleryLightbox } from "./gallery/GalleryLightbox";
 
+// Phase 11 - Volunteer & Engagement exports
+export { VolunteerSection } from "./volunteer/VolunteerSection";
+export { VolunteerHeader } from "./volunteer/VolunteerHeader";
+export { VolunteerBenefits } from "./volunteer/VolunteerBenefits";
+export { VolunteerJourney } from "./volunteer/VolunteerJourney";
+export { VolunteerRoles } from "./volunteer/VolunteerRoles";
+export { VolunteerTestimonials } from "./volunteer/VolunteerTestimonials";
+export { VolunteerCTA } from "./volunteer/VolunteerCTA";
+export { VolunteerFAQ } from "./volunteer/VolunteerFAQ";
+export { VolunteerModal } from "./volunteer/VolunteerModal";
+
+
 

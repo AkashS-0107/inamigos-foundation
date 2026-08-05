@@ -3,5 +3,7 @@ export * from "./about";
 export * from "./projects";
 export * from "./impact";
 export * from "./gallery";
+export * from "./volunteer";
+
 
 

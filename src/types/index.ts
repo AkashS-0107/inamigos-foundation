@@ -7,3 +7,5 @@ export type {
   FeaturedGalleryItem,
   GalleryFilterOption,
 } from "./gallery";
+export * from "./volunteer";
+
