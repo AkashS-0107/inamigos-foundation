@@ -231,15 +231,10 @@ This project strengthened my understanding of
 
 # 📸 Screenshots
 
-> Replace these placeholders with actual screenshots.
+<img width="1904" height="964" alt="Screenshot 2026-08-05 215356" src="https://github.com/user-attachments/assets/044c03b4-8890-4695-97ac-11a19938c836" />
 
-| Hero | Projects |
-|------|----------|
-| Add Screenshot | Add Screenshot |
 
-| Gallery | Volunteer |
-|----------|-----------|
-| Add Screenshot | Add Screenshot |
+<img width="1892" height="967" alt="Screenshot 2026-08-05 215436" src="https://github.com/user-attachments/assets/7b5fa9ef-9a1b-418d-a106-2bee24a5d10e" />
 
 ---
 
@@ -259,7 +254,7 @@ https://akashsuresh.me
 
 💼 LinkedIn
 
-https://www.linkedin.com/in/akash-suresh/
+(https://www.linkedin.com/in/akash-suresh-53850a326/)
 
 🐙 GitHub
 
