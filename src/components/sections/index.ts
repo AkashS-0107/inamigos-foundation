@@ -21,3 +21,16 @@ export * from "./impact/GalleryLightbox";
 export * from "./impact/ImpactTestimonials";
 export * from "./impact/RecognitionSection";
 
+// Phase 10 - Premium Gallery Experience exports
+export { GallerySection } from "./gallery/GallerySection";
+export { GalleryHeader } from "./gallery/GalleryHeader";
+export { GalleryFeatured } from "./gallery/GalleryFeatured";
+export { GalleryCarousel } from "./gallery/GalleryCarousel";
+export { GalleryFilters } from "./gallery/GalleryFilters";
+export { GalleryCard } from "./gallery/GalleryCard";
+export { GalleryEmptyState } from "./gallery/GalleryEmptyState";
+export { GallerySkeleton } from "./gallery/GallerySkeleton";
+export { GalleryGrid as PremiumGalleryGrid } from "./gallery/GalleryGrid";
+export { GalleryLightbox as PremiumGalleryLightbox } from "./gallery/GalleryLightbox";
+
+
