@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import { siteConfig } from "@/app/config";
 import { routePaths } from "@/app/routes";
 import { navigationItems } from "@/data";
-import { HandHeart, Menu } from "@/lib/icons";
+import { Menu } from "@/lib/icons";
 import { IconButton, Container } from "@/components/ui";
 import { classNames } from "@/utils";
 
@@ -27,9 +27,15 @@ export function Navbar() {
   return (
     <header className={classNames("site-header", hasScrolled && "site-header--scrolled")} data-site-header>
       <Container className="site-header__container">
-        <Link className="site-brand ds-focus" to={routePaths.home} aria-label={`${siteConfig.name} home`}>
-          <span className="site-brand__mark" aria-hidden="true"><HandHeart size={22} strokeWidth={2.25} /></span>
-          <span className="site-brand__name">{siteConfig.name}</span>
+        <Link className="site-brand ds-focus" to={routePaths.home} aria-label={`${siteConfig.name} Home`}>
+          <img
+            src="/logo.svg"
+            alt="InAmigos Foundation Logo"
+            className="site-brand__logo"
+            width="42"
+            height="42"
+            style={{ height: "2.65rem", width: "auto", display: "block" }}
+          />
         </Link>
 
         <nav className="site-header__desktop-nav" aria-label="Primary navigation">

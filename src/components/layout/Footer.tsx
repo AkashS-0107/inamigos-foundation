@@ -13,8 +13,11 @@ export function Footer() {
       <Container className="site-footer__container">
         <div className="site-footer__grid">
           <section className="site-footer__intro" aria-labelledby="footer-title">
-            <h2 id="footer-title" className="site-footer__brand">{siteConfig.name}</h2>
-            <Paragraph>Community-led action for a more connected, compassionate future.</Paragraph>
+            <div className="site-footer__brand-wrapper" style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
+              <img src="/logo.svg" alt="InAmigos Foundation Logo" width="48" height="48" style={{ height: "3rem", width: "auto" }} />
+              <h2 id="footer-title" className="site-footer__brand" style={{ fontSize: "1.25rem", margin: 0 }}>{siteConfig.name}</h2>
+            </div>
+            <Paragraph>Section 8 Registered Non-Profit • 80G & 12A Certified • CSR-1 Registered • NITI Aayog & ISO 9001:2015 Certified.</Paragraph>
           </section>
 
           <nav aria-label="Footer quick links">
@@ -27,8 +30,9 @@ export function Footer() {
           <section aria-labelledby="footer-contact-title">
             <h2 id="footer-contact-title" className="site-footer__heading">Get in touch</h2>
             <address className="site-footer__contact">
-              <a className="site-footer__link ds-focus" href="mailto:hello@inamigos.org">hello@inamigos.org</a>
-              <span>Contact details coming soon</span>
+              <a className="site-footer__link ds-focus" href="mailto:support@inamigosfoundation.org.in">support@inamigosfoundation.org.in</a>
+              <a className="site-footer__link ds-focus" href="tel:+916267309902">+91 626 730 9902</a>
+              <span>Ward No. 5, Sipat Ujwal Nagar, Bilaspur, Chhattisgarh 495555</span>
             </address>
           </section>
 

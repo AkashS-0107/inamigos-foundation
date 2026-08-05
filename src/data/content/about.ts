@@ -40,28 +40,28 @@ export interface WhyChooseItem {
 
 export const aboutStoryData = {
   eyebrow: "About InAmigos Foundation",
-  headlinePrefix: "Driven by",
-  headlineAccent: "Compassion",
-  headlineSuffix: ". Dedicated to Sustainable Community Empowerment.",
+  headlinePrefix: "Empowering Lives Through",
+  headlineAccent: "Collective Action",
+  headlineSuffix: ". Dedicated to Sustainable Community Progress.",
   storyParagraphs: [
-    "InAmigos Foundation was born from a simple yet profound realization: real, lasting change happens when passionate youth and compassionate communities come together to bridge the gap between privilege and opportunity.",
-    "Founded with a non-profit mission to serve underserved populations across India, we focus on holistic development—providing quality education for children, healthcare assistance, emergency relief, and vocational skill-building for sustainable self-reliance.",
-    "Through active grassroots mobilization and radical financial transparency, we turn small acts of kindness into scalable, transformative social movements.",
+    "InAmigos Foundation was founded on September 23, 2020, by Mr. Govind Shukla (Founder & CEO). It is a Central Government licensed Section 8 registered non-profit organization based in Chhattisgarh, operating across 28 Indian states.",
+    "Holding 80G & 12A certifications, CSR-1 registration, NITI Aayog Darpan recognition, and IAF ISO 9001:2015 accreditation, our foundation ensures total transparency, accountability, and tax-exempt benefits for donors while driving maximum ground-level impact.",
+    "Through our 6 key initiatives — Project Bachpanshala (Education), Project Udaan (Women Empowerment), Project Jeev (Animal Welfare), Project Sewa (Food & Relief), Project Prakriti (Environment), and Project Vikas (Youth Employability) — we transform youth passion into lasting social change.",
   ],
   ctaText: "Learn More About Our Journey",
   ctaPath: routePaths.about,
   secondaryCtaText: "View Mission & Vision",
   secondaryCtaHref: "#mission-vision",
   visualCard: {
-    eyebrow: "NGO Impact Focus",
-    title: "Building Grassroots Resilience Across India",
+    eyebrow: "Official Accreditations",
+    title: "Govt. Licensed Section 8 NGO & ISO 9001:2015 Certified",
     description:
-      "Every program we run is shaped directly by local community leaders, ensuring sustainable growth and tangible life transformation.",
+      "Recognized by NITI Aayog, CSR-1 Registered, holding 80G & 12A tax exemption licenses, delivering audited, high-quality social impact nationwide.",
     miniStats: [
-      { value: "150+", label: "Villages & Hubs" },
-      { value: "100%", label: "Fund Transparency" },
-      { value: "1,200+", label: "Active Youth" },
-      { value: "50,000+", label: "Lives Impacted" },
+      { value: "28", label: "Indian States" },
+      { value: "80G & 12A", label: "Tax Exempt" },
+      { value: "ISO 9001", label: "Quality Certified" },
+      { value: "50,000+", label: "Beneficiaries" },
     ],
   },
 };

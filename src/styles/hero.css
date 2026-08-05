@@ -94,37 +94,39 @@
   align-items: center;
   gap: var(--space-2);
   padding: var(--space-2) var(--space-4);
-  border: 1px solid rgba(11, 107, 87, 0.2);
+  border: 1.5px solid rgba(11, 107, 87, 0.3);
   border-radius: var(--radius-full);
-  background: rgba(225, 244, 236, 0.85);
+  background: rgba(235, 248, 242, 0.95);
   backdrop-filter: blur(var(--blur-sm));
-  color: #075240;
+  color: #044233;
   font-size: var(--font-size-body-small);
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-bold);
   letter-spacing: 0.02em;
-  box-shadow: 0 4px 14px rgba(11, 107, 87, 0.08);
+  box-shadow: 0 4px 14px rgba(11, 107, 87, 0.12);
 }
 
 .hero__headline {
   margin-top: var(--space-5);
   font-family: var(--font-family-display);
   font-size: clamp(2.4rem, 5.2vw, 4.75rem);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-extrabold, 800);
   line-height: 1.05;
   letter-spacing: -0.04em;
-  color: var(--color-text-primary);
+  color: #0f172a;
 }
 
 .hero__headline-accent {
-  background: linear-gradient(135deg, #0b6b57 0%, #16855b 50%, #123b5d 100%);
+  background: linear-gradient(135deg, #0b6b57 0%, #018b5b 50%, #0d4b75 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  font-weight: 800;
 }
 
 .hero__headline-highlight {
   position: relative;
   white-space: nowrap;
+  color: #0f172a;
 }
 
 .hero__headline-highlight::after {
@@ -134,7 +136,7 @@
   left: 0;
   right: 0;
   height: 0.28em;
-  background: rgba(246, 166, 35, 0.28);
+  background: rgba(246, 166, 35, 0.35);
   border-radius: var(--radius-sm);
   z-index: -1;
 }
@@ -142,9 +144,10 @@
 .hero__description {
   margin-top: var(--space-6);
   max-width: 38rem;
-  color: var(--color-text-secondary);
+  color: #334155;
   font-size: clamp(1.05rem, 1.8vw, 1.25rem);
-  line-height: var(--line-height-relaxed);
+  font-weight: 450;
+  line-height: 1.6;
 }
 
 /* Call To Action Buttons Group */

@@ -279,54 +279,41 @@ export const volunteerRolesData: VolunteerRole[] = [
 export const volunteerTestimonialsData: VolunteerTestimonial[] = [
   {
     id: "vtest-1",
-    name: "Priya Sharma",
-    role: "Lead Education Mentor",
+    name: "Faiz Khan",
+    role: "Volunteer Supervisor",
     avatarUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+      "https://www.inamigosfoundation.org.in/public/storage/volunteers/1738081237.jpg",
     quote:
-      "Volunteering with InAmigos Foundation completely redefined my career path. Seeing children in rural hubs master reading and digital tools within months gave me a deep sense of purpose that no corporate job ever matched.",
-    tenure: "2+ Years Active Volunteer",
-    impactHighlight: "Mentored 180+ Children",
-    location: "Pune Chapter",
+      "Volunteering with InAmigos Foundation completely redefined my leadership journey. Supervising grassroots drives across Uttar Pradesh and seeing children master reading and digital skills gives me a deep sense of purpose.",
+    tenure: "Volunteer Supervisor (UP Chapter)",
+    impactHighlight: "Supervised 40+ Community Drives",
+    location: "Uttar Pradesh Chapter",
     rating: 5,
   },
   {
     id: "vtest-2",
-    name: "Rohan Kulkarni",
-    role: "Environment Squad Captain",
+    name: "Manavi Jaiswal",
+    role: "Junior Volunteer Associate",
     avatarUrl:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+      "https://www.inamigosfoundation.org.in/public/storage/volunteers/1738127845.jpg",
     quote:
-      "The level of transparency, squad camaraderie, and operational efficiency at InAmigos is extraordinary. Every tree we plant is geotagged, monitored, and cared for. You genuinely feel part of a national movement.",
-    tenure: "1.5 Years Volunteer",
-    impactHighlight: "Planted 2,400+ Saplings",
-    location: "Nagpur Chapter",
+      "The level of transparency, squad camaraderie, and ground-level execution at InAmigos is extraordinary. Mentoring young students under Project Bachpanshala makes you feel part of a national movement.",
+    tenure: "Junior Volunteer Associate",
+    impactHighlight: "Mentored 150+ Children",
+    location: "Central India Chapter",
     rating: 5,
   },
   {
     id: "vtest-3",
-    name: "Ananya Iyer",
-    role: "Digital Content Specialist",
+    name: "Akash",
+    role: "Volunteer Associate",
     avatarUrl:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80",
+      "https://www.inamigosfoundation.org.in/public/storage/volunteers/1738080678.jpg",
     quote:
-      "As a remote volunteer working from Bangalore, I was worried about feeling disconnected. But the team included me in every creative decision. Designing impact reels that raise real donor funds is incredibly fulfilling!",
-    tenure: "1 Year Remote Volunteer",
-    impactHighlight: "Designed 45+ Impact Campaigns",
-    location: "Remote (Bangalore)",
-    rating: 5,
-  },
-  {
-    id: "vtest-4",
-    name: "Dr. Siddharth Verma",
-    role: "Medical Camp Coordinator",
-    avatarUrl:
-      "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=300&q=80",
-    quote:
-      "Participating in rural medical drives with InAmigos allowed me to serve elderly villagers who had never seen an eye doctor before. The ground organization is flawless and incredibly respectful of beneficiaries.",
-    tenure: "3 Years Volunteer Doctor",
-    impactHighlight: "Served 1,200+ Patients",
-    location: "Mumbai Chapter",
+      "InAmigos mobilizes youth like no other non-profit. Whether we are conducting Project Sewa ration drives or Project Prakriti tree plantations, every action is structured, transparent, and high-impact.",
+    tenure: "Volunteer Associate",
+    impactHighlight: "Participated in 25+ Field Drives",
+    location: "Chhattisgarh Chapter",
     rating: 5,
   },
 ];
