@@ -19,6 +19,7 @@
   --font-family-body: "Inter", system-ui, sans-serif;
   --container-max-width: 80rem;
   --container-gutter: 1.5rem;
+  --site-header-height: 4.5rem;
 
   /* Typography */
   --font-size-display: clamp(3rem, 6vw, 5.5rem);

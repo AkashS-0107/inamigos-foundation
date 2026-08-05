@@ -1,4 +1,4 @@
-import { ArrowDownRight, ArrowRight, Check, ChevronDown, ChevronLeft, ChevronRight, CircleHelp, ExternalLink, FolderKanban, HandHeart, Heart, HeartPulse, Home, Images, Info, Mail, Menu, MoveRight, Play, Plus, Quote, Search, Send, Sparkles, X } from "lucide-react";
+import { ArrowDownRight, ArrowRight, Check, ChevronDown, ChevronLeft, ChevronRight, CircleHelp, ExternalLink, FolderKanban, Github, HandHeart, Heart, HeartPulse, Home, Images, Info, Instagram, Linkedin, Mail, Menu, MoveRight, Play, Plus, Quote, Search, Send, Sparkles, X } from "lucide-react";
 
 /** Shared Lucide icons for application and design-system composition. */
 export {
@@ -11,12 +11,15 @@ export {
   CircleHelp,
   ExternalLink,
   FolderKanban,
+  Github,
   HandHeart,
   Heart,
   HeartPulse,
   Home,
   Images,
   Info,
+  Instagram,
+  Linkedin,
   Mail,
   Menu,
   MoveRight,

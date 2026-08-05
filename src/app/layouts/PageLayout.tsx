@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 
-/** Route content boundary reserved for page transitions and page-level layout rules. */
+import { PageTransition } from "@/components";
+
+/** Route content boundary with a reusable, reduced-motion-aware transition surface. */
 export function PageLayout() {
-  return <Outlet />;
+  return <PageTransition className="page-transition"><Outlet /></PageTransition>;
 }

@@ -2,6 +2,7 @@
 @import "./tailwind.css";
 @import "./animations.css";
 @import "./design-system.css";
+@import "./shell.css";
 
 *,
 *::before,
@@ -9,7 +10,7 @@
   box-sizing: border-box;
 }
 
-html { background: var(--color-background); }
+html { background: var(--color-background); scroll-behavior:smooth; scroll-padding-top:var(--site-header-height); }
 
 body {
   min-width: 20rem;
@@ -18,5 +19,7 @@ body {
   color: var(--color-text-primary);
   font-family: var(--font-family-body);
 }
+
+#root { min-height:100dvh; }
 
 button, input, textarea { font: inherit; }
