@@ -3,6 +3,7 @@
 @import "./animations.css";
 @import "./design-system.css";
 @import "./shell.css";
+@import "./hero.css";
 
 *,
 *::before,

@@ -1,1 +1,1 @@
-/** Section component exports will be composed here. */
+export * from "./Hero";

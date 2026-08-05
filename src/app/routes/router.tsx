@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { PageLayout, RootLayout } from "@/app/layouts";
+import { HomePage } from "@/pages";
 
 import { routePaths } from "./paths";
 
@@ -10,7 +11,7 @@ export const router = createBrowserRouter([
     path: routePaths.home,
     element: <RootLayout />,
     children: [
-      { index: true, element: <PageLayout /> },
+      { index: true, element: <HomePage /> },
       { path: routePaths.about.slice(1), element: <PageLayout /> },
       { path: routePaths.projects.slice(1), element: <PageLayout /> },
       { path: routePaths.impact.slice(1), element: <PageLayout /> },
