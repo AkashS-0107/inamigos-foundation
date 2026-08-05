@@ -8,4 +8,6 @@ export type {
   GalleryFilterOption,
 } from "./gallery";
 export * from "./volunteer";
+export * from "./contact";
+
 

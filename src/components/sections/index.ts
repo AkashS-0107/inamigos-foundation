@@ -44,5 +44,17 @@ export { VolunteerCTA } from "./volunteer/VolunteerCTA";
 export { VolunteerFAQ } from "./volunteer/VolunteerFAQ";
 export { VolunteerModal } from "./volunteer/VolunteerModal";
 
+// Phase 12 - Premium Contact Experience exports
+export { ContactSection } from "./contact/ContactSection";
+export { ContactHeader } from "./contact/ContactHeader";
+export { ContactInfo } from "./contact/ContactInfo";
+export { ContactCards } from "./contact/ContactCards";
+export { ContactForm } from "./contact/ContactForm";
+export { LocationCard } from "./contact/LocationCard";
+export { SocialLinks } from "./contact/SocialLinks";
+export { FAQAccordion } from "./contact/FAQAccordion";
+export { ContactCTA } from "./contact/ContactCTA";
+
+
 
 

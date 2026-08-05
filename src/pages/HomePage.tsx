@@ -1,6 +1,6 @@
-import { AboutSection, GallerySection, Hero, ImpactSection, ProjectsSection, VolunteerSection } from "@/components/sections";
+import { AboutSection, ContactSection, GallerySection, Hero, ImpactSection, ProjectsSection, VolunteerSection } from "@/components/sections";
 
-/** Home route composition containing Hero, About & Mission, Projects Showcase, Impact, Gallery, and Volunteer experience. */
+/** Home route composition containing Hero, About & Mission, Projects Showcase, Impact, Gallery, Volunteer, and Contact experience. */
 export function HomePage() {
   return (
     <>
@@ -10,6 +10,7 @@ export function HomePage() {
       <ImpactSection />
       <GallerySection />
       <VolunteerSection />
+      <ContactSection />
     </>
   );
 }

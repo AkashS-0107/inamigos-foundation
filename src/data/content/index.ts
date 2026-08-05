@@ -4,6 +4,8 @@ export * from "./projects";
 export * from "./impact";
 export * from "./gallery";
 export * from "./volunteer";
+export * from "./contact";
+
 
 
 
