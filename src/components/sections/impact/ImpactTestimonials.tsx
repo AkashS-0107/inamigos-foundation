@@ -26,7 +26,7 @@ export function ImpactTestimonials({ testimonials }: ImpactTestimonialsProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-12">
-          <span className="inline-block rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4">
+          <span className="inline-block rounded-full bg-primary/10 border border-primary/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary mb-4">
             Voices of Impact
           </span>
           <h2
@@ -34,7 +34,7 @@ export function ImpactTestimonials({ testimonials }: ImpactTestimonialsProps) {
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight"
           >
             What Our Community{" "}
-            <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-teal-300 to-accent bg-clip-text text-transparent">
               Says
             </span>
           </h2>
@@ -51,10 +51,10 @@ export function ImpactTestimonials({ testimonials }: ImpactTestimonialsProps) {
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-emerald-400 ${
+                className={`px-4 py-2 text-xs sm:text-sm font-semibold rounded-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent ${
                   isActive
-                    ? "bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/20"
-                    : "bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-emerald-500/40 hover:text-emerald-300"
+                    ? "bg-primary text-white shadow-lg shadow-primary/20"
+                    : "bg-slate-900/80 text-slate-300 border border-slate-800 hover:border-primary/40 hover:text-primary"
                 }`}
               >
                 {cat === "All" ? "All Voices" : cat}
@@ -74,7 +74,7 @@ export function ImpactTestimonials({ testimonials }: ImpactTestimonialsProps) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.4, delay: idx * 0.1 }}
-                className="group relative flex flex-col justify-between rounded-3xl border border-emerald-500/20 bg-slate-900/80 p-6 sm:p-8 backdrop-blur-xl shadow-xl hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300"
+                className="group relative flex flex-col justify-between rounded-3xl border border-primary/20 bg-slate-900/80 p-6 sm:p-8 backdrop-blur-xl shadow-xl hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
               >
                 <div>
                   {/* Top Bar: Quote Icon, Rating & Category Badge */}
@@ -85,15 +85,15 @@ export function ImpactTestimonials({ testimonials }: ImpactTestimonialsProps) {
                       ))}
                     </div>
 
-                    <span className="inline-flex items-center gap-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-300">
-                      <CheckCircle2 className="h-3.5 w-3.5 text-emerald-400" />
+                    <span className="inline-flex items-center gap-1 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                      <CheckCircle2 className="h-3.5 w-3.5 text-primary" />
                       {item.category}
                     </span>
                   </div>
 
                   {/* Quote Body */}
                   <div className="relative mb-6">
-                    <Quote className="absolute -top-3 -left-3 h-8 w-8 text-emerald-500/10 group-hover:text-emerald-500/20 transition-colors" />
+                    <Quote className="absolute -top-3 -left-3 h-8 w-8 text-primary/10 group-hover:text-primary/20 transition-colors" />
                     <p className="relative z-10 text-base sm:text-lg text-slate-200 leading-relaxed font-normal italic">
                       "{item.quote}"
                     </p>
@@ -105,17 +105,17 @@ export function ImpactTestimonials({ testimonials }: ImpactTestimonialsProps) {
                   <img
                     src={item.avatar}
                     alt={item.name}
-                    className="h-12 w-12 rounded-full object-cover border-2 border-emerald-400/80"
+                    className="h-12 w-12 rounded-full object-cover border-2 border-primary/80"
                     loading="lazy"
                   />
                   <div>
-                    <h3 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
+                    <h3 className="text-base font-bold text-white group-hover:text-primary transition-colors">
                       {item.name}
                     </h3>
                     <p className="text-xs text-slate-400">
                       {item.role} {item.organizationOrBatch ? `• ${item.organizationOrBatch}` : ""}
                     </p>
-                    <p className="text-[11px] text-emerald-400 font-medium mt-0.5">
+                    <p className="text-[11px] text-secondary font-medium mt-0.5">
                       {item.location}
                     </p>
                   </div>

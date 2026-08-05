@@ -16,16 +16,16 @@ export function VolunteerFAQ() {
   return (
     <section
       id="volunteer-faq"
-      aria-labelledby="faq-heading"
+      aria-labelledby="volunteer-faq-heading"
       className="py-16 sm:py-24 relative"
     >
       <Container maxWidth="content">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3">
             <VolunteerIcon name="HelpCircle" size={14} /> Got Questions?
           </div>
-          <h2 id="faq-heading" className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 id="volunteer-faq-heading" className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Frequently Asked <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Questions</span>
           </h2>
           <p className="text-slate-300 mt-3 text-base sm:text-lg">

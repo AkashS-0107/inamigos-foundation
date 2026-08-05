@@ -64,19 +64,19 @@ export const ProjectHighlights = memo(function ProjectHighlights({ highlights }:
       aria-labelledby="impact-highlights-heading"
       className="w-full max-w-7xl mx-auto my-12 sm:my-16 px-2"
     >
-      <div className="relative rounded-3xl p-6 sm:p-10 lg:p-12 bg-gradient-to-br from-emerald-950 via-gray-900 to-emerald-950 text-white shadow-2xl overflow-hidden border border-emerald-500/25">
+      <div className="relative rounded-3xl p-6 sm:p-10 lg:p-12 bg-gradient-to-br from-teal-950 via-teal-900 to-teal-950 text-white shadow-2xl overflow-hidden border border-primary/25">
         {/* Ambient Blur Orbs */}
         <div
-          className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-emerald-500/20 blur-3xl pointer-events-none"
+          className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-primary/20 blur-3xl pointer-events-none"
           aria-hidden="true"
         />
         <div
-          className="absolute bottom-0 left-1/4 w-80 h-80 rounded-full bg-emerald-400/10 blur-3xl pointer-events-none"
+          className="absolute bottom-0 left-1/4 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"
           aria-hidden="true"
         />
 
         <div className="relative z-10 text-center max-w-2xl mx-auto mb-10 space-y-3">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-secondary/20 text-secondary border border-secondary/30">
             Social Impact Scope
           </span>
           <h3
@@ -107,7 +107,7 @@ export const ProjectHighlights = memo(function ProjectHighlights({ highlights }:
                 }
                 className="flex flex-col items-center p-6 rounded-2xl bg-white/10 dark:bg-white/5 border border-white/10 backdrop-blur-md hover:bg-white/15 transition-all duration-300 text-center group"
               >
-                <div className="p-3 rounded-2xl bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="p-3 rounded-2xl bg-secondary/20 text-secondary border border-secondary/30 mb-4 group-hover:scale-110 transition-transform duration-300">
                   <Icon className="w-6 h-6" aria-hidden="true" role="presentation" />
                 </div>
 
@@ -119,7 +119,7 @@ export const ProjectHighlights = memo(function ProjectHighlights({ highlights }:
                   />
                 </div>
 
-                <h4 className="text-sm font-semibold text-emerald-200 mb-2">
+                <h4 className="text-sm font-semibold text-teal-200 mb-2">
                   {item.label}
                 </h4>
 

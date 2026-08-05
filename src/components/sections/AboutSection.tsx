@@ -11,7 +11,7 @@ import { WhyChooseUs } from "./about/WhyChooseUs";
  */
 export function AboutSection() {
   return (
-    <Section className="about-section" id="about" aria-labelledby="about-heading">
+    <Section className="about-section scroll-mt-20" id="about" aria-labelledby="about-heading">
       {/* Background Ambient Glow Elements */}
       <div className="about__ambient about__ambient--emerald" aria-hidden="true" />
       <div className="about__ambient about__ambient--amber" aria-hidden="true" />

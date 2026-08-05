@@ -11,7 +11,14 @@ export function scrollToSection(
   sectionId: string,
   { offset, behavior = "smooth", block = "start", inline = "nearest" }: ScrollToSectionOptions = {},
 ): boolean {
-  const element = document.getElementById(sectionId);
+  const cleanId = sectionId.replace(/^[/#]+/, "");
+  
+  if (cleanId === "home" || cleanId === "") {
+    window.scrollTo({ top: 0, behavior });
+    return true;
+  }
+
+  const element = document.getElementById(cleanId);
   if (!element) return false;
 
   const resolvedOffset = offset ?? getStickyHeaderOffset();
@@ -21,6 +28,6 @@ export function scrollToSection(
   }
 
   const top = element.getBoundingClientRect().top + window.scrollY - resolvedOffset;
-  window.scrollTo({ top, behavior });
+  window.scrollTo({ top: Math.max(0, top), behavior });
   return true;
 }

@@ -1,3 +1,4 @@
+import { scrollToSection } from "@/utils";
 import { volunteerHeaderData } from "@/data/content/volunteer";
 import { Container } from "@/components/ui/Container";
 import { FadeIn, SlideUp, StaggerContainer } from "@/components/animations/MotionWrappers";
@@ -20,10 +21,7 @@ export function VolunteerHeader({ onOpenApplyModal }: VolunteerHeaderProps) {
   } = volunteerHeaderData;
 
   const handleSecondaryClick = () => {
-    const el = document.querySelector(secondaryCta.href);
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth" });
-    }
+    scrollToSection(secondaryCta.href);
   };
 
   return (

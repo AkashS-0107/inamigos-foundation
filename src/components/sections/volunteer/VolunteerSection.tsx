@@ -27,7 +27,7 @@ export function VolunteerSection() {
     <section
       id="volunteer"
       aria-label="InAmigos Foundation Volunteer & Community Engagement"
-      className="relative py-20 sm:py-28 bg-slate-950 text-white overflow-hidden border-t border-slate-900"
+      className="relative py-20 sm:py-28 bg-slate-950 text-white overflow-hidden border-t border-slate-900 scroll-mt-20"
     >
       {/* Background Ambient Gradient Lighting */}
       <div

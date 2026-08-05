@@ -1,15 +1,17 @@
 import { useEffect, useRef } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 import { navigationItems } from "@/data";
 import { X } from "@/lib/icons";
 import { IconButton } from "@/components/ui";
-import { classNames } from "@/utils";
+import { classNames, scrollToSection } from "@/utils";
 
 interface MobileNavigationProps {
   isOpen: boolean;
   onClose: () => void;
+  activeSection?: string;
+  setActiveSection?: (sectionId: string) => void;
 }
 
 const focusableSelector = [
@@ -22,10 +24,11 @@ const focusableSelector = [
 ].join(",");
 
 /** Modal navigation drawer with focus containment for compact viewports. */
-export function MobileNavigation({ isOpen, onClose }: MobileNavigationProps) {
+export function MobileNavigation({ isOpen, onClose, activeSection, setActiveSection }: MobileNavigationProps) {
   const drawerRef = useRef<HTMLElement>(null);
   const previouslyFocusedElement = useRef<HTMLElement | null>(null);
   const shouldReduceMotion = useReducedMotion();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!isOpen) return;
@@ -68,6 +71,17 @@ export function MobileNavigation({ isOpen, onClose }: MobileNavigationProps) {
     };
   }, [isOpen, onClose]);
 
+  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    event.preventDefault();
+    onClose();
+    const sectionId = href === "/" ? "home" : href.replace(/^\//, "").replace(/^#/, "");
+    if (sectionId) {
+      setActiveSection?.(sectionId);
+      scrollToSection(sectionId);
+      navigate(href === "/" ? "/" : `/${sectionId}`);
+    }
+  };
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -100,16 +114,26 @@ export function MobileNavigation({ isOpen, onClose }: MobileNavigationProps) {
             <nav className="mobile-navigation__links" aria-label="Primary navigation">
               {navigationItems.map((item) => {
                 const Icon = item.icon;
+                const sectionId = item.href === "/" ? "home" : item.href.replace(/^\//, "").replace(/^#/, "");
+                const isActive = activeSection === sectionId;
+
                 return (
                   <NavLink
                     key={item.href}
-                    className={({ isActive }) => classNames("mobile-navigation__link ds-focus", isActive && "mobile-navigation__link--active")}
+                    className={classNames("mobile-navigation__link ds-focus", isActive && "mobile-navigation__link--active")}
                     to={item.href}
-                    end={item.href === "/"}
-                    onClick={onClose}
+                    onClick={(e) => handleLinkClick(e, item.href)}
+                    style={{ position: "relative" }}
                   >
-                    <Icon size={19} aria-hidden="true" />
-                    {item.label}
+                    <Icon size={19} aria-hidden="true" style={{ position: "relative", zIndex: 1 }} />
+                    <span style={{ position: "relative", zIndex: 1 }}>{item.label}</span>
+                    {isActive && (
+                      <motion.span
+                        layoutId="mobileNavIndicator"
+                        className="mobile-navigation__link-indicator"
+                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      />
+                    )}
                   </NavLink>
                 );
               })}
@@ -120,3 +144,4 @@ export function MobileNavigation({ isOpen, onClose }: MobileNavigationProps) {
     </AnimatePresence>
   );
 }
+

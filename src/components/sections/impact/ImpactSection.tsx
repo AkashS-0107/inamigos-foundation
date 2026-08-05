@@ -14,7 +14,7 @@ import { RecognitionSection } from "./RecognitionSection";
 
 export function ImpactSection() {
   return (
-    <div className="relative bg-slate-950 text-white overflow-hidden border-t border-slate-900">
+    <section id="impact" aria-label="InAmigos Foundation Impact & Accomplishments" className="relative bg-slate-950 text-white overflow-hidden border-t border-slate-900 scroll-mt-20">
       {/* Background ambient lighting effects */}
       <div className="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-emerald-500/10 rounded-full blur-[140px]" />
 
@@ -35,6 +35,6 @@ export function ImpactSection() {
 
       {/* Section 5: Trust, Accolades & Logo Strip */}
       <RecognitionSection recognitionItems={recognitionData} />
-    </div>
+    </section>
   );
 }

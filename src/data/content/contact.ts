@@ -119,6 +119,16 @@ export const contactData: ContactInfo = {
       ariaLabel: "Follow InAmigos Foundation on Twitter / X",
       color: "from-slate-700/20 to-slate-500/20 text-slate-300 border-slate-500/30",
     },
+    {
+      id: "youtube",
+      platform: "YouTube",
+      handle: "@inamigosfoundation",
+      href: "https://www.youtube.com/@inamigosfoundation",
+      iconName: "Youtube",
+      followerCount: "Official YouTube",
+      ariaLabel: "Subscribe to InAmigos Foundation on YouTube",
+      color: "from-red-600/20 to-orange-500/20 text-red-400 border-red-500/30",
+    },
   ],
   faqs: [
     {

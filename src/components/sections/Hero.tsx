@@ -87,7 +87,7 @@ export function Hero() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="hero" aria-labelledby="hero-headline">
+    <section id="home" className="hero scroll-mt-20" aria-labelledby="hero-headline">
       {/* Background Ambient Lighting Layers */}
       <div className="hero__ambient hero__ambient--emerald" aria-hidden="true" />
       <div className="hero__ambient hero__ambient--amber" aria-hidden="true" />

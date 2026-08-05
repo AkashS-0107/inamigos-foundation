@@ -60,7 +60,7 @@ export function GallerySection() {
     <section
       id="gallery"
       aria-label="InAmigos Foundation Activity Gallery"
-      className="relative py-20 sm:py-28 bg-slate-950 text-white overflow-hidden border-t border-slate-900"
+      className="relative py-20 sm:py-28 bg-slate-950 text-white overflow-hidden border-t border-slate-900 scroll-mt-20"
     >
       {/* Background ambient lighting effects */}
       <div

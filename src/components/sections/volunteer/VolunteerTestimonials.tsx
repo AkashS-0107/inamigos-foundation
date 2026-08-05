@@ -44,7 +44,7 @@ export function VolunteerTestimonials() {
   return (
     <section
       id="volunteer-testimonials"
-      aria-labelledby="testimonials-heading"
+      aria-labelledby="volunteer-testimonials-heading"
       className="py-16 sm:py-24 relative bg-slate-950/40 border-y border-slate-900"
     >
       <Container maxWidth="content">
@@ -53,7 +53,7 @@ export function VolunteerTestimonials() {
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3">
             <VolunteerIcon name="MessageSquare" size={14} /> Volunteer Voices
           </div>
-          <h2 id="testimonials-heading" className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 id="volunteer-testimonials-heading" className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Stories from the <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Frontlines</span>
           </h2>
           <p className="text-slate-300 mt-3 text-base sm:text-lg">

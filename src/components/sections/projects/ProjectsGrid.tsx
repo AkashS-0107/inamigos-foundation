@@ -61,7 +61,7 @@ export const ProjectsGrid = memo(function ProjectsGrid({
             exit={{ opacity: 0, y: -10 }}
             className="flex flex-col items-center justify-center p-8 sm:p-12 text-center rounded-3xl bg-white/70 dark:bg-gray-900/60 border border-gray-200/80 dark:border-gray-800 backdrop-blur-lg shadow-sm"
           >
-            <div className="p-4 rounded-full bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 mb-4 border border-emerald-200 dark:border-emerald-800">
+            <div className="p-4 rounded-full bg-primary/5 dark:bg-primary/10 text-primary dark:text-teal-400 mb-4 border border-primary/20 dark:border-primary/30">
               <FolderKanban className="w-8 h-8" aria-hidden="true" role="presentation" />
             </div>
 
@@ -79,7 +79,7 @@ export const ProjectsGrid = memo(function ProjectsGrid({
                 size="md"
                 onClick={onResetCategory}
                 startIcon={<RotateCcw className="w-4 h-4" aria-hidden="true" role="presentation" />}
-                className="rounded-xl shadow-md focus-visible:ring-2 focus-visible:ring-emerald-500"
+                className="rounded-xl shadow-md focus-visible:ring-2 focus-visible:ring-accent"
               >
                 Reset All Filters
               </Button>

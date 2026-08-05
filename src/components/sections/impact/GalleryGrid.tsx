@@ -34,7 +34,7 @@ export function GalleryGrid({ categories, items }: GalleryGridProps) {
 
   return (
     <section
-      id="gallery"
+      id="impact-gallery"
       aria-labelledby="gallery-heading"
       className="relative py-16 sm:py-24"
     >

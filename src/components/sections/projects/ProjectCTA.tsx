@@ -24,12 +24,12 @@ export const ProjectCTA = memo(function ProjectCTA({ options }: ProjectCTAProps)
       <div className="relative rounded-3xl p-6 sm:p-10 bg-white/90 dark:bg-gray-900/90 border border-gray-200/80 dark:border-gray-800 shadow-xl backdrop-blur-xl overflow-hidden">
         {/* Subtle Ambient Glow */}
         <div
-          className="absolute top-0 right-0 w-72 h-72 rounded-full bg-emerald-500/10 dark:bg-emerald-500/15 blur-3xl pointer-events-none"
+          className="absolute top-0 right-0 w-72 h-72 rounded-full bg-primary/10 dark:bg-primary/15 blur-3xl pointer-events-none"
           aria-hidden="true"
         />
 
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10 space-y-3">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 border border-primary/20 dark:border-primary/30">
             Get Involved
           </span>
 
@@ -52,16 +52,16 @@ export const ProjectCTA = memo(function ProjectCTA({ options }: ProjectCTAProps)
             return (
               <div
                 key={option.id}
-                className="flex flex-col justify-between p-6 rounded-2xl bg-gray-50/90 dark:bg-gray-800/60 border border-gray-200/70 dark:border-gray-700/60 hover:border-emerald-300 dark:hover:border-emerald-700 hover:shadow-lg transition-all duration-300 group"
+                className="flex flex-col justify-between p-6 rounded-2xl bg-gray-50/90 dark:bg-gray-800/60 border border-gray-200/70 dark:border-gray-700/60 hover:border-primary/40 dark:hover:border-primary/50 hover:shadow-lg transition-all duration-300 group"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-4">
-                    <div className="p-3 rounded-xl bg-emerald-500 text-white shadow-sm shadow-emerald-500/30 group-hover:scale-110 transition-transform duration-300">
+                    <div className="p-3 rounded-xl bg-primary text-white shadow-sm shadow-primary/30 group-hover:scale-110 transition-transform duration-300">
                       <Icon className="w-5 h-5" aria-hidden="true" role="presentation" />
                     </div>
 
                     {option.badge && (
-                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-secondary/15 dark:bg-secondary/25 text-secondary dark:text-orange-300 border border-secondary/25 dark:border-secondary/35">
                         {option.badge}
                       </span>
                     )}
@@ -71,7 +71,7 @@ export const ProjectCTA = memo(function ProjectCTA({ options }: ProjectCTAProps)
                     {option.title}
                   </h4>
 
-                  <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300 mb-2">
+                  <p className="text-xs font-semibold text-primary dark:text-teal-400 mb-2">
                     {option.subtitle}
                   </p>
 
@@ -86,7 +86,7 @@ export const ProjectCTA = memo(function ProjectCTA({ options }: ProjectCTAProps)
                       variant={option.variant}
                       size="sm"
                       endIcon={<ArrowRight className="w-3.5 h-3.5" aria-hidden="true" role="presentation" />}
-                      className="w-full justify-between rounded-xl group-hover:bg-emerald-600 group-hover:text-white focus-visible:ring-2 focus-visible:ring-emerald-500 transition-colors duration-200"
+                      className="w-full justify-between rounded-xl group-hover:bg-primary group-hover:text-white focus-visible:ring-2 focus-visible:ring-accent transition-colors duration-200"
                     >
                       {option.buttonText}
                     </Button>

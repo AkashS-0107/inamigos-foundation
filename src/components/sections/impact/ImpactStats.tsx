@@ -47,15 +47,15 @@ function ImpactStatCard({ stat, index }: ImpactStatCardProps) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-emerald-500/20 bg-slate-900/60 p-6 sm:p-8 backdrop-blur-xl shadow-xl shadow-emerald-950/20 hover:border-emerald-500/40 hover:shadow-2xl hover:shadow-emerald-500/10 transition-all duration-300"
+      className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-primary/20 bg-slate-900/60 p-6 sm:p-8 backdrop-blur-xl shadow-xl shadow-primary/5 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-300"
     >
       {/* Background ambient radial gradient */}
-      <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-emerald-500/10 blur-2xl group-hover:bg-emerald-500/20 transition-all duration-500" />
+      <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-primary/10 blur-2xl group-hover:bg-primary/20 transition-all duration-500" />
 
       <div>
         {/* Card Header: Icon & Verified Badge */}
         <div className="flex items-center justify-between mb-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 transition-all duration-300">
+          <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary/10 text-primary border border-primary/20 group-hover:scale-110 group-hover:bg-primary group-hover:text-white transition-all duration-300">
             <IconComponent className="h-6 w-6" aria-hidden="true" />
           </div>
 
@@ -82,7 +82,7 @@ function ImpactStatCard({ stat, index }: ImpactStatCardProps) {
         </div>
 
         {/* Label */}
-        <h3 className="mt-2 text-lg font-bold text-emerald-100 group-hover:text-emerald-300 transition-colors">
+        <h3 className="mt-2 text-lg font-bold text-teal-100 group-hover:text-teal-200 transition-colors">
           {stat.label}
         </h3>
 
@@ -116,7 +116,7 @@ export function ImpactStats({ stats }: ImpactStatsProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-12 sm:mb-16">
-          <span className="inline-block rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4">
+          <span className="inline-block rounded-full bg-primary/10 border border-primary/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary mb-4">
             Measurable Outcomes
           </span>
           <h2
@@ -124,7 +124,7 @@ export function ImpactStats({ stats }: ImpactStatsProps) {
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight"
           >
             Real Numbers Behind Our{" "}
-            <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-teal-300 to-accent bg-clip-text text-transparent">
               Mission
             </span>
           </h2>

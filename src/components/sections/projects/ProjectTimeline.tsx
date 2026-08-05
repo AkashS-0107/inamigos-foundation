@@ -14,15 +14,15 @@ const timelineIconMap: Record<TimelineMilestone["iconName"], LucideIcon> = {
 
 const statusStyles: Record<TimelineMilestone["status"], { badge: string; icon: LucideIcon }> = {
   Completed: {
-    badge: "bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800",
+    badge: "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800",
     icon: CheckCircle2,
   },
   Ongoing: {
-    badge: "bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800",
+    badge: "bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800",
     icon: Clock,
   },
   Upcoming: {
-    badge: "bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-800",
+    badge: "bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800",
     icon: Compass,
   },
 };
@@ -40,7 +40,7 @@ export const ProjectTimeline = memo(function ProjectTimeline({ milestones }: Pro
       className="w-full max-w-7xl mx-auto my-12 sm:my-16 px-2"
     >
       <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3">
-        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800">
+        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 border border-primary/20 dark:border-primary/30">
           Evolution & Growth
         </span>
         <h3
@@ -57,7 +57,7 @@ export const ProjectTimeline = memo(function ProjectTimeline({ milestones }: Pro
       <div className="relative max-w-4xl mx-auto">
         {/* Central Vertical Connector Line */}
         <div
-          className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-0.5 -ml-0.5 bg-gradient-to-b from-emerald-500 via-emerald-400 to-amber-500/50 dark:from-emerald-600 dark:via-emerald-500 dark:to-amber-500/30"
+          className="absolute left-4 sm:left-1/2 top-0 bottom-0 w-0.5 -ml-0.5 bg-gradient-to-b from-primary via-primary/60 to-secondary/35 dark:from-primary dark:via-primary/50 dark:to-secondary/20"
           aria-hidden="true"
         />
 
@@ -88,7 +88,7 @@ export const ProjectTimeline = memo(function ProjectTimeline({ milestones }: Pro
                 )}
               >
                 {/* Timeline Node Marker */}
-                <div className="absolute left-4 sm:left-1/2 -ml-5 sm:-ml-5 flex items-center justify-center w-10 h-10 rounded-full bg-emerald-600 text-white shadow-lg shadow-emerald-600/30 ring-4 ring-white dark:ring-gray-900 z-10">
+                <div className="absolute left-4 sm:left-1/2 -ml-5 sm:-ml-5 flex items-center justify-center w-10 h-10 rounded-full bg-primary text-white shadow-lg shadow-primary/30 ring-4 ring-white dark:ring-gray-900 z-10">
                   <Icon className="w-5 h-5" aria-hidden="true" role="presentation" />
                 </div>
 
@@ -106,7 +106,7 @@ export const ProjectTimeline = memo(function ProjectTimeline({ milestones }: Pro
                         isEven ? "sm:justify-end" : "justify-start"
                       )}
                     >
-                      <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                      <span className="text-xs font-bold text-primary dark:text-teal-300">
                         {item.year}
                       </span>
                       <span className="text-gray-300 dark:text-gray-600" aria-hidden="true">•</span>
@@ -128,7 +128,7 @@ export const ProjectTimeline = memo(function ProjectTimeline({ milestones }: Pro
                       {item.title}
                     </h4>
 
-                    <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300 mt-0.5">
+                    <p className="text-xs font-semibold text-primary dark:text-teal-400 mt-0.5">
                       {item.subtitle}
                     </p>
 
@@ -142,7 +142,7 @@ export const ProjectTimeline = memo(function ProjectTimeline({ milestones }: Pro
                         isEven ? "sm:justify-end" : "justify-start"
                       )}
                     >
-                      <span className="px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-200/60 dark:border-emerald-800/60">
+                      <span className="px-2.5 py-1 rounded-lg bg-primary/5 dark:bg-primary/10 text-primary dark:text-teal-300 border border-primary/15 dark:border-primary/20">
                         Key Impact: {item.impactMetric}
                       </span>
                     </div>

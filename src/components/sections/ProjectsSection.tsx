@@ -32,22 +32,22 @@ export const ProjectsSection = memo(function ProjectsSection() {
     <section
       id="projects"
       aria-labelledby="projects-section-title"
-      className="relative w-full py-16 sm:py-24 bg-gradient-to-b from-gray-50 via-white to-gray-50 dark:from-gray-950 dark:via-gray-900 dark:to-gray-950 overflow-hidden"
+      className="relative w-full py-16 sm:py-24 bg-gradient-to-b from-background via-white to-background dark:from-background dark:via-surface dark:to-background overflow-hidden scroll-mt-20"
     >
       {/* Background Ambient Blur Orbs */}
       <div
-        className="absolute top-1/4 left-0 w-[500px] h-[500px] rounded-full bg-emerald-500/5 dark:bg-emerald-500/10 blur-[120px] pointer-events-none"
+        className="absolute top-1/4 left-0 w-[500px] h-[500px] rounded-full bg-primary/5 dark:bg-primary/10 blur-[120px] pointer-events-none"
         aria-hidden="true"
       />
       <div
-        className="absolute bottom-1/4 right-0 w-[500px] h-[500px] rounded-full bg-blue-500/5 dark:bg-blue-500/10 blur-[120px] pointer-events-none"
+        className="absolute bottom-1/4 right-0 w-[500px] h-[500px] rounded-full bg-accent/5 dark:bg-accent/10 blur-[120px] pointer-events-none"
         aria-hidden="true"
       />
 
       <Container maxWidth="content" className="relative z-10 space-y-12 sm:space-y-16">
         {/* 1. Projects Section Header */}
         <header className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 shadow-sm">
+          <span className="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 border border-primary/20 dark:border-primary/30 shadow-sm">
             {projectsHeaderData.eyebrow}
           </span>
 

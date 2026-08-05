@@ -12,7 +12,7 @@ export function ContactSection() {
     <section
       id="contact"
       aria-label="Contact InAmigos Foundation"
-      className="relative py-20 sm:py-28 bg-slate-950 text-white overflow-hidden border-t border-slate-900"
+      className="relative py-20 sm:py-28 bg-slate-950 text-white overflow-hidden border-t border-slate-900 scroll-mt-20"
     >
       {/* Background Ambient Lighting */}
       <div

@@ -1,18 +1,18 @@
 /* InAmigos Foundation design tokens: semantic, framework-agnostic primitives. */
 
 :root {
-  /* Color palette */
-  --color-primary: #0b6b57;
-  --color-secondary: #123b5d;
-  --color-accent: #f6a623;
-  --color-background: #f8faf9;
+  /* Color palette - Official Refined InAmigos Identity */
+  --color-primary: #0F766E;
+  --color-secondary: #F97316;
+  --color-accent: #2563EB;
+  --color-background: #FFFBF5;
   --color-surface: #ffffff;
-  --color-text-primary: #12231f;
-  --color-text-secondary: #5c6b66;
-  --color-border: #dbe5e0;
-  --color-success: #16855b;
-  --color-warning: #d98216;
-  --color-error: #d14343;
+  --color-text-primary: #1F2937;
+  --color-text-secondary: #4B5563;
+  --color-border: #E5E7EB;
+  --color-success: #16A34A;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
 
   /* Font pairing: Manrope for expressive display text; Inter for highly legible UI and body text. */
   --font-family-display: "Manrope", "Inter", sans-serif;
@@ -72,11 +72,11 @@
   --opacity-solid: 1;
 
   /* Elevation */
-  --shadow-xs: 0 1px 2px rgb(18 35 31 / 0.05);
-  --shadow-sm: 0 2px 6px rgb(18 35 31 / 0.07);
-  --shadow-md: 0 8px 20px rgb(18 35 31 / 0.10);
-  --shadow-lg: 0 16px 40px rgb(18 35 31 / 0.12);
-  --shadow-xl: 0 24px 60px rgb(18 35 31 / 0.16);
+  --shadow-xs: 0 1px 2px rgb(15 118 110 / 0.05);
+  --shadow-sm: 0 2px 6px rgb(15 118 110 / 0.07);
+  --shadow-md: 0 8px 20px rgb(15 118 110 / 0.10);
+  --shadow-lg: 0 16px 40px rgb(15 118 110 / 0.12);
+  --shadow-xl: 0 24px 60px rgb(15 118 110 / 0.16);
 
   /* Motion */
   --duration-fast: 150ms;
@@ -114,17 +114,17 @@
 
 /* Semantic dark-theme overrides. Components consume these variables rather than palette values. */
 :root[data-theme="dark"] {
-  --color-primary: #4cc6a2;
-  --color-secondary: #9dc9ee;
-  --color-accent: #f9c45b;
-  --color-background: #10201c;
-  --color-surface: #172b26;
-  --color-text-primary: #eff8f4;
-  --color-text-secondary: #b8cbc3;
-  --color-border: #315047;
-  --color-success: #54c98f;
-  --color-warning: #f2ae54;
-  --color-error: #ee7d7d;
+  --color-primary: #14B8A6;
+  --color-secondary: #FB923C;
+  --color-accent: #3B82F6;
+  --color-background: #072C29;
+  --color-surface: #0B4F4A;
+  --color-text-primary: #F3F4F6;
+  --color-text-secondary: #D1D5DB;
+  --color-border: #0A3C38;
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-error: #F87171;
   --shadow-xs: 0 1px 2px rgb(0 0 0 / 0.20);
   --shadow-sm: 0 2px 6px rgb(0 0 0 / 0.24);
   --shadow-md: 0 8px 20px rgb(0 0 0 / 0.28);

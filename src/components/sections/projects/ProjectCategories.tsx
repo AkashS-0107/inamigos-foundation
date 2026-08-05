@@ -88,16 +88,16 @@ export const ProjectCategories = memo(function ProjectCategories({
               onClick={() => onSelectCategory(cat.id)}
               onKeyDown={(e) => handleKeyDown(e, index)}
               className={classNames(
-                "relative group flex flex-col items-center justify-between p-3.5 sm:p-4 min-h-[88px] sm:min-h-[96px] rounded-2xl transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 border text-center cursor-pointer select-none overflow-hidden",
+                "relative group flex flex-col items-center justify-between p-3.5 sm:p-4 min-h-[88px] sm:min-h-[96px] rounded-2xl transition-all duration-300 outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900 border text-center cursor-pointer select-none overflow-hidden",
                 isActive
-                  ? "bg-emerald-600/10 dark:bg-emerald-500/15 border-emerald-500/50 text-emerald-900 dark:text-emerald-300 shadow-md shadow-emerald-500/10"
-                  : "bg-white/80 dark:bg-gray-800/70 border-gray-200/90 dark:border-gray-700/70 text-gray-700 dark:text-gray-300 hover:bg-emerald-50/60 dark:hover:bg-gray-800 hover:border-emerald-300/80 dark:hover:border-emerald-700/70 shadow-sm"
+                  ? "bg-primary/10 dark:bg-primary/20 border-primary/30 text-primary dark:text-teal-300 shadow-md shadow-primary/10"
+                  : "bg-white/80 dark:bg-slate-900/70 border-gray-200/90 dark:border-slate-800 text-gray-700 dark:text-gray-300 hover:bg-primary/5 dark:hover:bg-primary/10 hover:border-primary/30 dark:hover:border-primary/40 shadow-sm"
               )}
             >
               {isActive && (
                 <motion.div
                   layoutId="activeCategoryIndicator"
-                  className="absolute inset-0 rounded-2xl border-2 border-emerald-500 dark:border-emerald-400 pointer-events-none"
+                  className="absolute inset-0 rounded-2xl border-2 border-primary dark:border-primary pointer-events-none"
                   transition={
                     shouldReduceMotion
                       ? { duration: 0 }
@@ -110,8 +110,8 @@ export const ProjectCategories = memo(function ProjectCategories({
                 className={classNames(
                   "p-2.5 rounded-xl transition-colors duration-300 flex items-center justify-center",
                   isActive
-                    ? "bg-emerald-500 text-white shadow-sm shadow-emerald-500/30"
-                    : "bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 group-hover:bg-emerald-100 dark:group-hover:bg-emerald-900/60"
+                    ? "bg-primary text-white shadow-sm shadow-primary/30"
+                    : "bg-primary/5 dark:bg-primary/10 text-primary dark:text-teal-400 group-hover:bg-primary/10 dark:group-hover:bg-primary/20"
                 )}
               >
                 <Icon className="w-5 h-5" aria-hidden="true" role="presentation" />
@@ -126,7 +126,7 @@ export const ProjectCategories = memo(function ProjectCategories({
                   className={classNames(
                     "inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-medium transition-colors",
                     isActive
-                      ? "bg-emerald-500/20 text-emerald-800 dark:text-emerald-200"
+                      ? "bg-primary/20 text-primary dark:text-teal-300"
                       : "bg-gray-100 dark:bg-gray-700/60 text-gray-600 dark:text-gray-400"
                   )}
                 >

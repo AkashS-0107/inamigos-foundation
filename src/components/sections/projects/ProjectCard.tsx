@@ -10,11 +10,11 @@ export interface ProjectCardProps {
 }
 
 const statusBadgeStyles: Record<Project["status"], string> = {
-  Featured: "bg-emerald-600 text-white shadow-emerald-600/20",
-  Active: "bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800",
-  Ongoing: "bg-blue-100 dark:bg-blue-950/80 text-blue-800 dark:text-blue-300 border-blue-300 dark:border-blue-800",
-  Upcoming: "bg-amber-100 dark:bg-amber-950/80 text-amber-800 dark:text-amber-300 border-amber-300 dark:border-amber-800",
-  Completed: "bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-700",
+  Featured: "bg-primary text-white shadow-primary/20 border-primary",
+  Active: "bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 border-primary/20 dark:border-primary/30",
+  Ongoing: "bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800",
+  Upcoming: "bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800",
+  Completed: "bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border-emerald-200 dark:border-emerald-800",
 };
 
 export const ProjectCard = memo(function ProjectCard({ project }: ProjectCardProps) {
@@ -73,7 +73,7 @@ export const ProjectCard = memo(function ProjectCard({ project }: ProjectCardPro
         {/* Location Badge */}
         <div className="absolute bottom-3 left-3 z-10">
           <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-medium bg-gray-950/85 backdrop-blur-md text-gray-200 border border-gray-800 shadow-sm">
-            <MapPin className="w-3 h-3 text-emerald-400 shrink-0" aria-hidden="true" role="presentation" />
+            <MapPin className="w-3 h-3 text-secondary shrink-0" aria-hidden="true" role="presentation" />
             {project.location}
           </span>
         </div>
@@ -82,7 +82,7 @@ export const ProjectCard = memo(function ProjectCard({ project }: ProjectCardPro
       {/* Card Content Body */}
       <div className="flex flex-col flex-1 p-5 justify-between space-y-4">
         <div className="space-y-2">
-          <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white line-clamp-1 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white line-clamp-1 group-hover:text-primary dark:group-hover:text-teal-400 transition-colors duration-200">
             {project.title}
           </h3>
 
@@ -112,7 +112,7 @@ export const ProjectCard = memo(function ProjectCard({ project }: ProjectCardPro
               variant="outline"
               size="sm"
               endIcon={<ArrowRight className="w-3.5 h-3.5" aria-hidden="true" role="presentation" />}
-              className="w-full justify-between rounded-xl group-hover:bg-emerald-600 group-hover:text-white group-hover:border-emerald-600 transition-all duration-200 focus-visible:ring-2 focus-visible:ring-emerald-500"
+              className="w-full justify-between rounded-xl group-hover:bg-secondary group-hover:text-white group-hover:border-secondary transition-all duration-200 focus-visible:ring-2 focus-visible:ring-accent"
             >
               {project.ctaLabel}
             </Button>

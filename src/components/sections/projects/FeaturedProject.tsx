@@ -24,11 +24,11 @@ export const FeaturedProject = memo(function FeaturedProject({ project }: Featur
       <div className="relative rounded-3xl overflow-hidden bg-white/90 dark:bg-gray-900/90 border border-gray-200/80 dark:border-gray-800 shadow-xl shadow-gray-950/5 backdrop-blur-xl transition-all duration-300">
         {/* Organic Subtle Ambient Background Orbs */}
         <div
-          className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-emerald-500/10 dark:bg-emerald-500/15 blur-3xl pointer-events-none"
+          className="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-primary/10 dark:bg-primary/15 blur-3xl pointer-events-none"
           aria-hidden="true"
         />
         <div
-          className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-amber-500/10 dark:bg-amber-500/10 blur-3xl pointer-events-none"
+          className="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 rounded-full bg-secondary/10 dark:bg-secondary/10 blur-3xl pointer-events-none"
           aria-hidden="true"
         />
 
@@ -63,13 +63,13 @@ export const FeaturedProject = memo(function FeaturedProject({ project }: Featur
 
             {/* Badges */}
             <div className="absolute top-4 left-4 right-4 flex flex-wrap items-center justify-between gap-2 z-10">
-              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-500 text-white shadow-md shadow-emerald-500/30">
+              <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-primary text-white shadow-md shadow-primary/30">
                 <Sparkles className="w-3.5 h-3.5" aria-hidden="true" role="presentation" />
                 Featured Flagship
               </span>
 
-              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-gray-950/80 backdrop-blur-md text-emerald-300 border border-emerald-500/30">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" aria-hidden="true" role="presentation" />
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-gray-950/80 backdrop-blur-md text-accent border border-accent/30">
+                <ShieldCheck className="w-3.5 h-3.5 text-accent" aria-hidden="true" role="presentation" />
                 {project.verifiedBadge}
               </span>
             </div>
@@ -77,7 +77,7 @@ export const FeaturedProject = memo(function FeaturedProject({ project }: Featur
             {/* Location Pill */}
             <div className="absolute bottom-4 left-4 right-4 z-10">
               <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-medium bg-gray-950/85 backdrop-blur-md text-gray-200 border border-gray-800 shadow-sm">
-                <MapPin className="w-3.5 h-3.5 text-emerald-400 shrink-0" aria-hidden="true" role="presentation" />
+                <MapPin className="w-3.5 h-3.5 text-secondary shrink-0" aria-hidden="true" role="presentation" />
                 {project.location}
               </span>
             </div>
@@ -86,7 +86,7 @@ export const FeaturedProject = memo(function FeaturedProject({ project }: Featur
           {/* Editorial Content */}
           <div className="lg:col-span-6 flex flex-col justify-between space-y-6">
             <div>
-              <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-emerald-600 dark:text-emerald-400 uppercase mb-2">
+              <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wider text-primary dark:text-teal-400 uppercase mb-2">
                 <span>{project.category}</span>
                 <span aria-hidden="true">•</span>
                 <span>Started {project.startDate}</span>
@@ -99,7 +99,7 @@ export const FeaturedProject = memo(function FeaturedProject({ project }: Featur
                 {project.title}
               </h3>
 
-              <p className="mt-2 text-sm sm:text-base font-semibold text-emerald-700 dark:text-emerald-300">
+              <p className="mt-2 text-sm sm:text-base font-semibold text-primary dark:text-teal-300">
                 {project.subtitle}
               </p>
 
@@ -151,7 +151,7 @@ export const FeaturedProject = memo(function FeaturedProject({ project }: Featur
                   variant="primary"
                   size="lg"
                   endIcon={<ArrowRight className="w-4 h-4" aria-hidden="true" role="presentation" />}
-                  className="rounded-xl shadow-md shadow-emerald-600/20 focus-visible:ring-2 focus-visible:ring-emerald-500"
+                  className="rounded-xl shadow-md shadow-primary/20 focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   {project.ctaLabel}
                 </Button>

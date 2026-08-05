@@ -2,9 +2,17 @@ import { SlideUp } from "@/components/animations";
 import { Container, GlassCard } from "@/components/ui";
 import { contactData } from "@/data/content/contact";
 import { ArrowRight, Building2, HandHeart, Mail } from "@/lib/icons";
+import { scrollToSection } from "@/utils";
 
 export function ContactCTA() {
   const { cta } = contactData;
+
+  const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith("#") || href.startsWith("/")) {
+      e.preventDefault();
+      scrollToSection(href);
+    }
+  };
 
   return (
     <section aria-labelledby="contact-cta-heading">
@@ -37,6 +45,7 @@ export function ContactCTA() {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
                   href={cta.primaryButtonHref}
+                  onClick={(e) => handleNav(e, cta.primaryButtonHref)}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm sm:text-base shadow-lg shadow-emerald-500/25 transition-all duration-300 ds-focus"
                 >
                   <Mail className="w-4 h-4" aria-hidden="true" />
@@ -46,6 +55,7 @@ export function ContactCTA() {
 
                 <a
                   href={cta.secondaryButtonHref}
+                  onClick={(e) => handleNav(e, cta.secondaryButtonHref)}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-white font-semibold text-sm sm:text-base border border-slate-700 transition-all duration-300 ds-focus"
                 >
                   <HandHeart className="w-4 h-4 text-emerald-400" aria-hidden="true" />
@@ -54,6 +64,7 @@ export function ContactCTA() {
 
                 <a
                   href={cta.tertiaryButtonHref}
+                  onClick={(e) => handleNav(e, cta.tertiaryButtonHref)}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-300 hover:text-teal-200 font-semibold text-sm sm:text-base border border-teal-500/30 transition-all duration-300 ds-focus"
                 >
                   <Building2 className="w-4 h-4 text-teal-400" aria-hidden="true" />

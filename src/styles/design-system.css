@@ -4,9 +4,13 @@
 .ds-button:hover:not(:disabled) { transform:translateY(calc(var(--space-1) * -0.5)); }
 .ds-button:disabled { cursor:not-allowed; opacity:.6; }
 .ds-button--primary { background:var(--color-primary); color:var(--color-surface); }
+.ds-button--primary:hover:not(:disabled) { background:color-mix(in srgb, var(--color-primary) 85%, black); border-color:color-mix(in srgb, var(--color-primary) 85%, black); }
 .ds-button--secondary { background:var(--color-secondary); color:var(--color-surface); }
+.ds-button--secondary:hover:not(:disabled) { background:color-mix(in srgb, var(--color-secondary) 85%, black); border-color:color-mix(in srgb, var(--color-secondary) 85%, black); }
 .ds-button--outline { background:transparent; border-color:var(--color-border); color:var(--color-text-primary); }
+.ds-button--outline:hover:not(:disabled) { background:color-mix(in srgb, var(--color-primary) 4%, transparent); border-color:var(--color-primary); color:var(--color-primary); }
 .ds-button--ghost { background:transparent; color:var(--color-primary); }
+.ds-button--ghost:hover:not(:disabled) { background:color-mix(in srgb, var(--color-primary) 8%, transparent); }
 .ds-button--sm { padding:var(--space-2) var(--space-3); font-size:var(--font-size-body-small); }
 .ds-button--lg { padding:var(--space-4) var(--space-6); font-size:var(--font-size-body-large); }
 .ds-icon-button { aspect-ratio:1; padding:var(--space-3); }
