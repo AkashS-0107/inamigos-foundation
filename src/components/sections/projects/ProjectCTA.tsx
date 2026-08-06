@@ -29,10 +29,6 @@ export const ProjectCTA = memo(function ProjectCTA({ options }: ProjectCTAProps)
         />
 
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10 space-y-3">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 border border-primary/20 dark:border-primary/30">
-            Get Involved
-          </span>
-
           <h3
             id="project-cta-heading"
             className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"

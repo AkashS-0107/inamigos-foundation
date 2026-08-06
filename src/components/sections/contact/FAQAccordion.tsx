@@ -4,7 +4,7 @@ import { FadeIn, SlideUp } from "@/components/animations";
 import { Container, GlassCard } from "@/components/ui";
 import { contactData } from "@/data/content/contact";
 import type { FAQ } from "@/types/contact";
-import { ChevronDown, CircleHelp } from "@/lib/icons";
+import { ChevronDown } from "@/lib/icons";
 
 export function FAQAccordion() {
   const [openId, setOpenId] = useState<string | null>("faq-volunteer");
@@ -44,10 +44,6 @@ export function FAQAccordion() {
     <section aria-labelledby="faq-heading" className="mb-24 scroll-mt-24" id="faq">
       <Container maxWidth="content">
         <SlideUp className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/10 border border-teal-500/20 text-teal-400 text-xs font-semibold mb-4">
-            <CircleHelp className="w-4 h-4" aria-hidden="true" />
-            <span>Got Questions?</span>
-          </div>
           <h2 id="faq-heading" className="text-3xl sm:text-4xl font-bold text-white mb-4">
             Frequently Asked Questions
           </h2>

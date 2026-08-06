@@ -14,9 +14,6 @@ export function VolunteerBenefits() {
       <Container maxWidth="content">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3">
-            <VolunteerIcon name="Sparkles" size={14} /> Why Volunteer With Us
-          </div>
           <h2 id="benefits-heading" className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Empower Communities,{" "}
             <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">

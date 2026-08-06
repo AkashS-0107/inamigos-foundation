@@ -103,12 +103,6 @@ export function Hero() {
         <div className="hero__grid">
           {/* LEFT COLUMN: Mission Narrative & Conversion Actions */}
           <div className="hero__content">
-            <FadeIn delay={0.05}>
-              <span className="hero__eyebrow-badge">
-                <Sparkles size={15} aria-hidden="true" /> Empowering Communities • Transforming Lives
-              </span>
-            </FadeIn>
-
             <SlideUp delay={0.15}>
               <h1 id="hero-headline" className="hero__headline">
                 Bringing <span className="hero__headline-accent">Hope</span>, Building{" "}

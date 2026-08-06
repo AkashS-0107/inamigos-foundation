@@ -40,9 +40,6 @@ export const ProjectTimeline = memo(function ProjectTimeline({ milestones }: Pro
       className="w-full max-w-7xl mx-auto my-12 sm:my-16 px-2"
     >
       <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3">
-        <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 border border-primary/20 dark:border-primary/30">
-          Evolution & Growth
-        </span>
         <h3
           id="project-timeline-heading"
           className="text-2xl sm:text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"

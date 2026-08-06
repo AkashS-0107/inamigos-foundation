@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { FadeIn, HoverScale, SlideUp } from "@/components/animations";
+import { HoverScale, SlideUp } from "@/components/animations";
 import { aboutStoryData } from "@/data/content";
-import { ArrowRight, HeartHandshake, Sparkles } from "@/lib/icons";
+import { ArrowRight, HeartHandshake } from "@/lib/icons";
 
 export function AboutStory() {
   const { visualCard } = aboutStoryData;
@@ -10,13 +10,6 @@ export function AboutStory() {
     <article className="about-story" id="about-story" aria-labelledby="about-story-title">
       {/* Left Column: Narrative Copy */}
       <div className="about-story__content">
-        <FadeIn delay={0.05}>
-          <span className="about-story__eyebrow">
-            <Sparkles size={14} aria-hidden="true" />
-            {aboutStoryData.eyebrow}
-          </span>
-        </FadeIn>
-
         <SlideUp delay={0.15}>
           <h2 id="about-story-title" className="about-story__headline">
             {aboutStoryData.headlinePrefix}{" "}

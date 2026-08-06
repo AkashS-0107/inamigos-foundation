@@ -15,7 +15,6 @@ export function JourneyTimeline() {
     <section className="about-journey-wrapper" id="our-journey" aria-labelledby="journey-header-title">
       <RevealOnScroll>
         <header className="about-section-header">
-          <span className="about-section-header__tag">{journeyTimelineHeader.tag}</span>
           <h2 id="journey-header-title" className="about-section-header__title">
             {journeyTimelineHeader.title}
           </h2>

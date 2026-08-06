@@ -2,7 +2,6 @@ import { useState } from "react";
 import type { VolunteerRole } from "@/types/volunteer";
 import { VolunteerBenefits } from "./VolunteerBenefits";
 import { VolunteerCTA } from "./VolunteerCTA";
-import { VolunteerFAQ } from "./VolunteerFAQ";
 import { VolunteerHeader } from "./VolunteerHeader";
 import { VolunteerJourney } from "./VolunteerJourney";
 import { VolunteerModal } from "./VolunteerModal";
@@ -58,10 +57,7 @@ export function VolunteerSection() {
       {/* 5. Volunteer Testimonials (Modern Slider/Carousel) */}
       <VolunteerTestimonials />
 
-      {/* 6. Frequently Asked Questions (Accordion) */}
-      <VolunteerFAQ />
-
-      {/* 7. Final Action Banner (CTA) */}
+      {/* 6. Final Action Banner (CTA) */}
       <VolunteerCTA onOpenApplyModal={() => handleOpenApplyModal()} />
 
       {/* Interactive Application Modal */}

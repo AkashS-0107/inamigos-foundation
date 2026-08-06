@@ -24,10 +24,7 @@ export function VolunteerJourney() {
 
       <Container maxWidth="content">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3">
-            <VolunteerIcon name="Target" size={14} /> Streamlined Path to Action
-          </div>
+        <div className="text-center max-w-3xl mx-auto mb-14">
           <h2 id="journey-heading" className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Your Volunteer <span className="bg-gradient-to-r from-emerald-400 to-cyan-300 bg-clip-text text-transparent">Journey</span>
           </h2>

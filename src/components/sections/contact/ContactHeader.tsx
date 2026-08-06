@@ -1,21 +1,13 @@
 import { FadeIn, SlideUp } from "@/components/animations";
 import { Container } from "@/components/ui";
 import { contactData } from "@/data/content/contact";
-import { Clock, Sparkles } from "@/lib/icons";
+import { Clock } from "@/lib/icons";
 
 export function ContactHeader() {
   const { header } = contactData;
 
   return (
     <Container className="text-center max-w-4xl mx-auto mb-16">
-      {/* Eyebrow Badge */}
-      <SlideUp delay={0.1}>
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm font-medium mb-6">
-          <Sparkles className="w-4 h-4 text-emerald-400" aria-hidden="true" />
-          <span>{header.eyebrow}</span>
-        </div>
-      </SlideUp>
-
       {/* Main Section Title */}
       <SlideUp delay={0.2}>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">

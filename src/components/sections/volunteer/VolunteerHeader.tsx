@@ -10,7 +10,6 @@ interface VolunteerHeaderProps {
 
 export function VolunteerHeader({ onOpenApplyModal }: VolunteerHeaderProps) {
   const {
-    eyebrow,
     title,
     titleHighlight,
     description,
@@ -28,14 +27,6 @@ export function VolunteerHeader({ onOpenApplyModal }: VolunteerHeaderProps) {
     <header className="relative pt-6 pb-12 sm:pb-16 text-center">
       <Container maxWidth="content">
         <StaggerContainer staggerChildren={0.1} className="max-w-4xl mx-auto space-y-6">
-          {/* Eyebrow Pill */}
-          <SlideUp>
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true" />
-              <span>{eyebrow}</span>
-            </div>
-          </SlideUp>
-
           {/* Large Heading */}
           <SlideUp>
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.15]">

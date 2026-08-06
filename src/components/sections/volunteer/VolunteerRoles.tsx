@@ -30,9 +30,6 @@ export function VolunteerRoles({ onApplyForRole }: VolunteerRolesProps) {
       <Container maxWidth="content">
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-3">
-            <VolunteerIcon name="Briefcase" size={14} /> Open Positions
-          </div>
           <h2 id="roles-heading" className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
             Explore Open <span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Volunteer Roles</span>
           </h2>

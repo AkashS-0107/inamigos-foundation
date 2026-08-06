@@ -8,7 +8,6 @@ export function MissionVision() {
     <section className="about-mv-wrapper" id="mission-vision" aria-labelledby="mission-vision-header-title">
       <RevealOnScroll>
         <header className="about-section-header">
-          <span className="about-section-header__tag">{missionVisionHeader.tag}</span>
           <h2 id="mission-vision-header-title" className="about-section-header__title">
             {missionVisionHeader.title}
           </h2>

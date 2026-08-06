@@ -15,7 +15,6 @@ export function WhyChooseUs() {
     <section className="about-why-wrapper" id="why-inamigos" aria-labelledby="why-header-title">
       <RevealOnScroll>
         <header className="about-section-header">
-          <span className="about-section-header__tag">{whyChooseUsHeader.tag}</span>
           <h2 id="why-header-title" className="about-section-header__title">
             {whyChooseUsHeader.title}
           </h2>

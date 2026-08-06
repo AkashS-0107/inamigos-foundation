@@ -1,31 +1,19 @@
 import { RevealOnScroll } from "@/components/animations";
-import { Badge, Container, Heading, Paragraph } from "@/components/ui";
-import { Camera, Sparkles } from "lucide-react";
+import { Container, Heading, Paragraph } from "@/components/ui";
+import { Sparkles } from "lucide-react";
 
 interface GalleryHeaderProps {
-  eyebrow?: string;
   title?: string;
   subtitle?: string;
 }
 
 export function GalleryHeader({
-  eyebrow = "AUTHENTIC STORIES & MEMORIES",
   title = "Moments of Transformation & Impact",
   subtitle = "Explore ground-level photographs capturing real smiles, community drives, tree plantations, and emergency relief missions by InAmigos Foundation.",
 }: GalleryHeaderProps) {
   return (
     <Container className="text-center pt-8 pb-12 sm:pb-16 relative z-10">
       <RevealOnScroll>
-        <div className="flex justify-center mb-4">
-          <Badge
-            variant="outline"
-            className="gap-2 bg-emerald-500/10 text-emerald-400 border-emerald-500/30 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest rounded-full shadow-sm backdrop-blur-md"
-          >
-            <Camera className="w-3.5 h-3.5 text-emerald-400 animate-pulse" />
-            <span>{eyebrow}</span>
-          </Badge>
-        </div>
-
         <Heading
           level={2}
           className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.15]"

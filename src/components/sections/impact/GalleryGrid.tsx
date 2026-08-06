@@ -41,9 +41,6 @@ export function GalleryGrid({ categories, items }: GalleryGridProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-12">
-          <span className="inline-block rounded-full bg-emerald-500/10 border border-emerald-500/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-emerald-400 mb-4">
-            Visual Portfolio
-          </span>
           <h2
             id="gallery-heading"
             className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight"

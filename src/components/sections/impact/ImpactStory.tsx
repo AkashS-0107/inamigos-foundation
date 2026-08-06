@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, HeartHandshake, Quote, Sparkles } from "lucide-react";
+import { ArrowRight, HeartHandshake, Quote } from "lucide-react";
 import type { ImpactStoryData } from "@/types/impact";
 
 interface ImpactStoryProps {
@@ -18,14 +18,6 @@ export function ImpactStory({ story }: ImpactStoryProps) {
       <div className="pointer-events-none absolute bottom-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header Tagline */}
-        <div className="flex items-center justify-center gap-2 mb-8">
-          <Sparkles className="h-5 w-5 text-primary" />
-          <span className="text-sm font-bold uppercase tracking-widest text-primary">
-            {story.tagline}
-          </span>
-        </div>
-
         {/* Large Split Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Column: Visual Media & Quote overlay */}

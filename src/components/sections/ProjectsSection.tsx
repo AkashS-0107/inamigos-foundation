@@ -47,10 +47,6 @@ export const ProjectsSection = memo(function ProjectsSection() {
       <Container maxWidth="content" className="relative z-10 space-y-12 sm:space-y-16">
         {/* 1. Projects Section Header */}
         <header className="text-center max-w-3xl mx-auto space-y-4">
-          <span className="inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wider uppercase bg-primary/10 dark:bg-primary/20 text-primary dark:text-teal-300 border border-primary/20 dark:border-primary/30 shadow-sm">
-            {projectsHeaderData.eyebrow}
-          </span>
-
           <Heading
             level={2}
             id="projects-section-title"

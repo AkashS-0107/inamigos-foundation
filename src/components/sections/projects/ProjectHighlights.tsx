@@ -76,9 +76,6 @@ export const ProjectHighlights = memo(function ProjectHighlights({ highlights }:
         />
 
         <div className="relative z-10 text-center max-w-2xl mx-auto mb-10 space-y-3">
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-secondary/20 text-secondary border border-secondary/30">
-            Social Impact Scope
-          </span>
           <h3
             id="impact-highlights-heading"
             className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white"

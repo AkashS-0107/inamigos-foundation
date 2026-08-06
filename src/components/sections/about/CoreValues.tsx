@@ -14,7 +14,6 @@ export function CoreValues() {
     <section className="about-values-wrapper" id="core-values" aria-labelledby="core-values-header-title">
       <RevealOnScroll>
         <header className="about-section-header">
-          <span className="about-section-header__tag">{coreValuesHeader.tag}</span>
           <h2 id="core-values-header-title" className="about-section-header__title">
             {coreValuesHeader.title}
           </h2>
