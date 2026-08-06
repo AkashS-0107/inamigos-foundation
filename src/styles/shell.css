@@ -8,7 +8,7 @@
 
 .site-header { position:sticky; z-index:var(--z-index-sticky); top:0; width:100%; border-bottom:1px solid transparent; background:transparent; transition:background-color var(--duration-normal) var(--ease-in-out), border-color var(--duration-normal) var(--ease-in-out), box-shadow var(--duration-normal) var(--ease-in-out); }
 .site-header--scrolled { border-color:color-mix(in srgb, var(--color-border) 85%, transparent); background:color-mix(in srgb, var(--color-background) 84%, transparent); box-shadow:var(--shadow-xs); backdrop-filter:blur(var(--blur-lg)); }
-.site-header__container { display:flex; min-height:var(--site-header-height); align-items:center; justify-content:space-between; gap:var(--space-4); }
+.site-header__container { display:flex; min-height:var(--site-header-height); align-items:center; justify-content:flex-start; gap:var(--space-6); }
 .site-brand { display:inline-flex; min-width:0; align-items:center; gap:var(--space-3); color:var(--color-text-primary); text-decoration:none; border-radius:var(--radius-md); }
 .site-brand__mark { display:grid; width:2.5rem; height:2.5rem; flex:0 0 auto; place-items:center; color:var(--color-surface); background:var(--color-primary); border-radius:var(--radius-md); box-shadow:var(--shadow-xs); }
 .site-brand__name { overflow:hidden; font-family:var(--font-family-display); font-size:1.05rem; font-weight:var(--font-weight-bold); text-overflow:ellipsis; white-space:nowrap; }
@@ -16,7 +16,7 @@
 .site-nav-link { position:relative; padding:var(--space-3); color:var(--color-text-secondary); font-size:var(--font-size-body-small); font-weight:var(--font-weight-semibold); text-decoration:none; border-radius:var(--radius-md); transition:color var(--duration-fast) var(--ease-in-out); }
 .site-nav-link:hover, .site-nav-link--active { color:var(--color-primary); }
 .site-nav-link__indicator { position:absolute; right:var(--space-3); bottom:var(--space-1); left:var(--space-3); height:2px; background:var(--color-primary); border-radius:var(--radius-full); pointer-events:none; }
-.site-header__menu-button { display:inline-flex; }
+.site-header__menu-button { display:inline-flex; margin-left:auto; }
 
 .mobile-navigation__overlay { position:fixed; z-index:var(--z-index-overlay); inset:0; display:flex; justify-content:flex-end; background:rgb(18 35 31 / .46); }
 .mobile-navigation { width:min(100%, 23rem); min-height:100%; padding:var(--space-6); overflow-y:auto; background:var(--color-surface); box-shadow:var(--shadow-xl); }

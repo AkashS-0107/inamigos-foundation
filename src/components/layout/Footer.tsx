@@ -4,6 +4,7 @@ import { siteConfig } from "@/app/config";
 import { navigationItems, socialLinks } from "@/data";
 import { Container, Divider } from "@/components/ui";
 import { scrollToSection } from "@/utils";
+import inamigosLogo from "@/assets/logos/inamigos-logo.jpeg";
 
 /** Compact premium global footer matching InAmigos RC1 brand guidelines. */
 export function Footer() {
@@ -27,12 +28,10 @@ export function Footer() {
               }}
             >
               <img
-                src="/logo.svg"
+                src={inamigosLogo}
                 alt="InAmigos Foundation Logo"
-                width="40"
-                height="40"
                 className="site-footer__logo"
-                style={{ height: "2.5rem", width: "auto" }}
+                style={{ height: "2.5rem", width: "auto", objectFit: "contain" }}
                 loading="lazy"
                 decoding="async"
               />

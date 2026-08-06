@@ -125,14 +125,16 @@ export function Hero() {
             {/* Primary & Secondary Action CTAs */}
             <SlideUp delay={0.35} className="hero__cta-group">
               <Link className="hero-btn hero-btn--primary ds-focus" to={routePaths.projects}>
-                Explore Our Projects <ArrowRight size={18} aria-hidden="true" />
+                <span>Explore Our Projects</span>
+                <ArrowRight size={18} className="hero-btn__icon" aria-hidden="true" />
               </Link>
               <Link className="hero-btn hero-btn--secondary ds-focus" to={routePaths.volunteer}>
-                <HandHeart size={18} aria-hidden="true" /> Become a Volunteer
+                <HandHeart size={18} aria-hidden="true" />
+                <span>Become a Volunteer</span>
               </Link>
             </SlideUp>
 
-            {/* Quick NGO Statistics */}
+            {/* Quick NGO Statistics - Premium Glass Cards */}
             <SlideUp delay={0.45} className="hero__stats" id="hero-stats">
               <HeroStat value={150} suffix="+" label="Communities Supported" delayMs={400} />
               <HeroStat value={45} suffix="+" label="Projects Running" delayMs={520} />
@@ -160,8 +162,8 @@ export function Hero() {
               <HeroVisual />
             </Suspense>
 
-            {/* Floating Impact Card 1: Emergency Relief */}
-            <FloatingElement className="hero-card hero-card--top-right" distance={8} duration={4.5} delay={0.2}>
+            {/* Floating Impact Card 1: Emergency Relief (Max float distance: 4px) */}
+            <FloatingElement className="hero-card hero-card--top-right" distance={4} duration={5.0} delay={0.2}>
               <div className="hero-card__icon-box hero-card__icon-box--heart">
                 <Heart size={20} fill="currentColor" aria-hidden="true" />
               </div>
@@ -171,8 +173,8 @@ export function Hero() {
               </div>
             </FloatingElement>
 
-            {/* Floating Impact Card 2: Volunteer Squad */}
-            <FloatingElement className="hero-card hero-card--bottom-left" distance={10} duration={5.2} delay={0.5}>
+            {/* Floating Impact Card 2: Volunteer Squad (Max float distance: 4px) */}
+            <FloatingElement className="hero-card hero-card--bottom-left" distance={4} duration={5.5} delay={0.4}>
               <div className="hero-avatars" aria-hidden="true">
                 <span className="hero-avatar hero-avatar--emerald">A</span>
                 <span className="hero-avatar hero-avatar--amber">R</span>
@@ -185,8 +187,8 @@ export function Hero() {
               </div>
             </FloatingElement>
 
-            {/* Floating Impact Card 3: Impact Progress */}
-            <FloatingElement className="hero-card hero-card--bottom-right" distance={7} duration={4.2} delay={0.8}>
+            {/* Floating Impact Card 3: Impact Progress (Max float distance: 4px) */}
+            <FloatingElement className="hero-card hero-card--bottom-right" distance={4} duration={4.8} delay={0.6}>
               <div className="hero-card__icon-box hero-card__icon-box--gold">
                 <Sparkles size={20} aria-hidden="true" />
               </div>
