@@ -7,9 +7,14 @@
 ![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?logo=framer&logoColor=white)
-![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?logo=vercel)
+![Vercel](https://img.shields.io/badge/Deployment-Vercel-black?logo=vercel)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
+# InAmigos Foundation Website
 
 **A modern, responsive NGO awareness platform developed during my AI Web Development Internship at InAmigos Foundation.**
+
+Designed to showcase the foundation's mission, initiatives, community impact, volunteer opportunities, and social outreach through a modern and accessible web experience.
 
 🌐 **Live Demo:** https://inamigos-foundation-kohl.vercel.app/
 
@@ -19,130 +24,202 @@
 
 ---
 
-# 📖 Overview
+# 📖 About The Project
 
-The **InAmigos Foundation** website is a modern, responsive, and production-ready web application designed to showcase the foundation's mission, social initiatives, impact, volunteer opportunities, and community engagement.
+This project is a production-ready NGO awareness website built to represent the work and impact of **InAmigos Foundation**, a Section 8 registered non-profit organization established in 2020 and headquartered in Bilaspur, Chhattisgarh. The foundation works across India in education, community welfare, environmental sustainability, women empowerment, animal welfare, and skill development. :contentReference[oaicite:1]{index=1}
 
-Built using **React**, **TypeScript**, and **Vite**, the application emphasizes:
+The website focuses on delivering:
 
 - Modern UI/UX
 - Responsive Design
 - Accessibility
 - Performance
-- SEO
-- Scalable Component Architecture
+- SEO-friendly architecture
+- Reusable Component Architecture
+
+---
+
+# 🚀 Project Highlights
+
+- ⚛️ Built with React 19 + TypeScript
+- 🎨 Premium responsive interface
+- 📱 Mobile-first design
+- ✨ Smooth animations using Framer Motion
+- 🧩 Component-driven architecture
+- ♿ Accessibility-focused implementation
+- 🚀 Deployed on Vercel
+- 🔍 SEO-friendly structure
 
 ---
 
 # ✨ Features
 
-## 🏠 Hero Section
+## 🏠 Home
 
-- Modern landing page
-- Animated hero
-- Call-to-action buttons
-- Responsive layout
+- Premium Hero Section
+- Animated Call-to-Action
+- Foundation Overview
+- Impact Highlights
 
 ## ℹ️ About
 
-- Foundation overview
+- Organization Story
 - Mission & Vision
 - Core Values
-- Timeline
+- Journey Timeline
 - Why Choose Us
 
 ## 🚀 Projects
 
-- Official initiatives
-- Featured project cards
-- Category filters
-- Project highlights
+Showcases the foundation's major initiatives:
+
+- Project SEVA
+- Project BachpanShala
+- Project JEEV
+- Project UDAAN
+- Project PRAKRITI
+- Project VIKAS
+
+Project cards, highlights and initiative overview are presented through a modern responsive interface. :contentReference[oaicite:2]{index=2}
 
 ## 📊 Impact
 
-- Animated statistics
-- Success stories
+- Community Statistics
+- Success Stories
+- Recognition
 - Testimonials
-- Community achievements
+- Social Impact Highlights
 
 ## 🖼 Gallery
 
-- Responsive gallery
-- Category filtering
-- Interactive previews
+- Responsive Gallery
+- Category Filtering
+- Interactive Image Cards
 
 ## 🤝 Volunteer
 
-- Volunteer journey
-- Roles
+- Volunteer Journey
+- Volunteer Roles
 - Benefits
-- FAQs
 - Testimonials
+- FAQ
 
 ## 📬 Contact
 
-- Contact information
-- Social links
-- Contact form
-- Footer navigation
+- Contact Information
+- Social Links
+- Contact Form
+- Footer Navigation
+
+---
+
+# 🎨 UI Highlights
+
+- Floating Glass Navigation
+- Right-side Section Navigator
+- Modern Hero Experience
+- Glassmorphism Components
+- Responsive Grid System
+- Interactive Cards
+- Smooth Scroll Navigation
+- Elegant Typography
+- Responsive Layout
+- Premium Micro-interactions
 
 ---
 
 # 🛠 Tech Stack
 
-## Frontend
-
-- React 19
-- TypeScript
-- Vite
-
-## Styling
-
-- Tailwind CSS
-- CSS Modules
-- Framer Motion
-
-## Icons
-
-- Lucide React
-
-## Development
-
-- Git
-- GitHub
-- npm
-
-## Deployment
-
-- Vercel
+| Category | Technologies |
+|-----------|--------------|
+| Frontend | React 19, TypeScript, Vite |
+| Styling | Tailwind CSS, CSS |
+| Animation | Framer Motion |
+| Icons | Lucide React |
+| Version Control | Git, GitHub |
+| Deployment | Vercel |
 
 ---
 
-# 📁 Project Structure
+# 🏗 Project Architecture
 
 ```text
 src/
 │
+├── app/
 ├── assets/
 ├── components/
 │   ├── common/
 │   ├── layout/
-│   └── sections/
+│   ├── sections/
+│   └── ui/
 │
 ├── data/
 ├── hooks/
 ├── pages/
+├── services/
 ├── styles/
 ├── types/
 ├── utils/
 └── App.tsx
 ```
 
+The project follows a modular, component-driven architecture that promotes maintainability, scalability, and code reusability.
+
+---
+
+# 📱 Responsive Design
+
+Optimized for:
+
+- 📱 Mobile
+- 📲 Tablet
+- 💻 Laptop
+- 🖥 Desktop
+- 🖥 Ultra-wide Displays
+
+---
+
+# ♿ Accessibility
+
+- Semantic HTML
+- Keyboard Navigation
+- ARIA-friendly Components
+- Responsive Typography
+- WCAG-conscious Color Contrast
+- Focus States
+
+---
+
+# ⚡ Performance
+
+- Optimized React Components
+- Lazy Loading
+- Responsive Images
+- Efficient Rendering
+- Production Build Optimization
+- SEO-friendly Metadata
+
+---
+
+# 📚 Skills Demonstrated
+
+- React Component Architecture
+- TypeScript
+- Responsive Web Design
+- Modern UI/UX Development
+- Accessibility Best Practices
+- Animation with Framer Motion
+- Git & GitHub Workflow
+- Production Deployment
+- Component-based Design
+- Frontend Project Organization
+
 ---
 
 # 🚀 Getting Started
 
-## Clone
+## Clone Repository
 
 ```bash
 git clone https://github.com/AkashS-0107/inamigos-foundation.git
@@ -160,19 +237,19 @@ cd inamigos-foundation
 npm install
 ```
 
-## Run Development Server
+## Start Development Server
 
 ```bash
 npm run dev
 ```
 
-## Production Build
+## Build Production Version
 
 ```bash
 npm run build
 ```
 
-## Preview Build
+## Preview Production Build
 
 ```bash
 npm run preview
@@ -180,61 +257,9 @@ npm run preview
 
 ---
 
-# 📱 Responsive Design
-
-The application is optimized for
-
-- 📱 Mobile
-- 📱 Tablet
-- 💻 Laptop
-- 🖥 Desktop
-- 🖥 Ultra-wide Displays
-
----
-
-# ♿ Accessibility
-
-- Semantic HTML
-- Keyboard Navigation
-- Focus States
-- Meaningful Alt Text
-- Responsive Typography
-- WCAG-conscious Color Contrast
-
----
-
-# ⚡ Performance
-
-- Lazy Loading
-- Optimized Components
-- Responsive Images
-- Production Build Optimization
-- SEO Metadata
-- Clean Component Architecture
-
----
-
-# 🎯 Learning Outcomes
-
-This project strengthened my understanding of
-
-- React Component Architecture
-- TypeScript
-- Responsive UI Development
-- Modern Frontend Workflows
-- Accessibility
-- Performance Optimization
-- Git & GitHub
-- Production Deployment
-
----
-
 # 📸 Screenshots
 
-<img width="1904" height="964" alt="Screenshot 2026-08-05 215356" src="https://github.com/user-attachments/assets/044c03b4-8890-4695-97ac-11a19938c836" />
-
-
-<img width="1892" height="967" alt="Screenshot 2026-08-05 215436" src="https://github.com/user-attachments/assets/7b5fa9ef-9a1b-418d-a106-2bee24a5d10e" />
+> Add your latest desktop and mobile screenshots here.
 
 ---
 
@@ -244,19 +269,29 @@ https://inamigos-foundation-kohl.vercel.app/
 
 ---
 
-# 👨‍💻 Developer
+# 👨‍💻 About the Developer
 
 ## Akash Suresh
 
-🌐 Portfolio
+Computer Science Engineering (AI & ML)
+
+Interested in:
+
+- Artificial Intelligence
+- Machine Learning
+- Modern Web Development
+- UI/UX
+- Open Source
+
+### Portfolio
 
 https://akashsuresh.me
 
-💼 LinkedIn
+### LinkedIn
 
-(https://www.linkedin.com/in/akash-suresh-53850a326/)
+https://www.linkedin.com/in/akash-suresh-53850a326/
 
-🐙 GitHub
+### GitHub
 
 https://github.com/AkashS-0107
 
@@ -264,24 +299,28 @@ https://github.com/AkashS-0107
 
 # 🙏 Acknowledgements
 
-Special thanks to **InAmigos Foundation** for providing the opportunity to contribute through this internship experience.
+Special thanks to **InAmigos Foundation** for providing the opportunity to contribute through this internship and develop this project.
+
+Learn more about the organization:
+
+https://inamigosfoundation.org.in
 
 ---
 
-# ⚠️ Disclaimer
+# 📄 Disclaimer
 
 This project was developed as part of an internship.
 
-The **InAmigos Foundation** name, logo, photographs, and organization-specific content belong to their respective owners.
+The InAmigos Foundation name, logo, images, trademarks, and organization-specific content remain the property of their respective owners.
 
-This repository is intended for educational and portfolio purposes only.
+This repository is shared solely for educational and portfolio purposes.
 
 ---
 
 <div align="center">
 
-⭐ If you found this project interesting, consider giving the repository a star.
+⭐ If you found this project interesting, consider starring the repository.
 
-Made with ❤️ using React & TypeScript.
+Built with ❤️ using React, TypeScript & Vite
 
 </div>
