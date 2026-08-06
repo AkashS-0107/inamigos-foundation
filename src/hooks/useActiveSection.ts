@@ -43,55 +43,37 @@ export function useActiveSection(): readonly [string, (sectionId: string) => voi
   }, [location.pathname, location.hash]);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (Date.now() < scrollLockUntil.current) return;
-
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const scrollHeight = document.documentElement.scrollHeight;
-
-      if (scrollY < 80) {
-        setActiveSection("home");
-        return;
-      }
-
-      if (windowHeight + scrollY >= scrollHeight - 60) {
-        setActiveSection("contact");
-        return;
-      }
-    };
+    const visibleRatios: Record<string, number> = {};
 
     const observerCallback: IntersectionObserverCallback = (entries) => {
       if (Date.now() < scrollLockUntil.current) return;
 
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const scrollHeight = document.documentElement.scrollHeight;
-
-      if (scrollY < 80) {
-        setActiveSection("home");
-        return;
-      }
-
-      if (windowHeight + scrollY >= scrollHeight - 60) {
-        setActiveSection("contact");
-        return;
-      }
-
-      const intersectingEntries = entries.filter((entry) => entry.isIntersecting);
-      if (intersectingEntries.length > 0) {
-        const sorted = intersectingEntries.sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-        const mostVisible = sorted[0];
-        if (mostVisible && mostVisible.target.id && SECTION_IDS.includes(mostVisible.target.id)) {
-          setActiveSection(mostVisible.target.id);
+      entries.forEach((entry) => {
+        if (entry.target.id && SECTION_IDS.includes(entry.target.id)) {
+          visibleRatios[entry.target.id] = entry.isIntersecting ? entry.intersectionRatio : 0;
         }
+      });
+
+      let maxRatio = 0;
+      let mostVisibleId = "";
+
+      SECTION_IDS.forEach((id) => {
+        const ratio = visibleRatios[id] || 0;
+        if (ratio > maxRatio) {
+          maxRatio = ratio;
+          mostVisibleId = id;
+        }
+      });
+
+      if (mostVisibleId) {
+        setActiveSection(mostVisibleId);
       }
     };
 
     const observerOptions: IntersectionObserverInit = {
       root: null,
-      rootMargin: "-80px 0px -30% 0px",
-      threshold: [0.1, 0.25, 0.5, 0.75],
+      rootMargin: "-20% 0px -35% 0px",
+      threshold: [0, 0.1, 0.25, 0.5, 0.75, 1.0],
     };
 
     const observer = new IntersectionObserver(observerCallback, observerOptions);
@@ -103,11 +85,8 @@ export function useActiveSection(): readonly [string, (sectionId: string) => voi
       }
     });
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
     return () => {
       observer.disconnect();
-      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
